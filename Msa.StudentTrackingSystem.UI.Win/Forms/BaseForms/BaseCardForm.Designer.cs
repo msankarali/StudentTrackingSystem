@@ -81,6 +81,10 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myKodTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyKodTextEdit();
             this.myMemoEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyMemoEdit();
             this.myPictureEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyPictureEdit();
+            this.mySimpleButton1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MySimpleButton();
+            this.mySpinEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MySpinEdit();
+            this.myTCKimlikNoEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyTCKimlikNoEdit();
+            this.myTelephoneNoTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyTelephoneNoTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
@@ -95,6 +99,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myKodTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myMemoEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mySpinEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myTCKimlikNoEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myTelephoneNoTextEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -496,11 +503,83 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myPictureEdit1.StatusBarShortcutDescription = null;
             this.myPictureEdit1.TabIndex = 38;
             // 
+            // mySimpleButton1
+            // 
+            this.mySimpleButton1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.mySimpleButton1.Appearance.Options.UseForeColor = true;
+            this.mySimpleButton1.Location = new System.Drawing.Point(380, 219);
+            this.mySimpleButton1.Name = "mySimpleButton1";
+            this.mySimpleButton1.Size = new System.Drawing.Size(167, 23);
+            this.mySimpleButton1.StatusBarDescription = null;
+            this.mySimpleButton1.TabIndex = 41;
+            this.mySimpleButton1.Text = "mySimpleButton1";
+            // 
+            // mySpinEdit1
+            // 
+            this.mySpinEdit1.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.mySpinEdit1.EnterMoveNextControl = true;
+            this.mySpinEdit1.Location = new System.Drawing.Point(380, 245);
+            this.mySpinEdit1.MenuManager = this.ribbonControl;
+            this.mySpinEdit1.Name = "mySpinEdit1";
+            this.mySpinEdit1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
+            this.mySpinEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.mySpinEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.mySpinEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.mySpinEdit1.Properties.Mask.EditMask = "d";
+            this.mySpinEdit1.Size = new System.Drawing.Size(167, 20);
+            this.mySpinEdit1.StatusBarDescription = null;
+            this.mySpinEdit1.TabIndex = 44;
+            // 
+            // myTCKimlikNoEdit1
+            // 
+            this.myTCKimlikNoEdit1.EnterMoveNextControl = true;
+            this.myTCKimlikNoEdit1.Location = new System.Drawing.Point(553, 219);
+            this.myTCKimlikNoEdit1.MenuManager = this.ribbonControl;
+            this.myTCKimlikNoEdit1.Name = "myTCKimlikNoEdit1";
+            this.myTCKimlikNoEdit1.Properties.Appearance.Options.UseTextOptions = true;
+            this.myTCKimlikNoEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myTCKimlikNoEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myTCKimlikNoEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myTCKimlikNoEdit1.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.myTCKimlikNoEdit1.Properties.Mask.EditMask = "\\d?\\d?\\d? \\d?\\d?\\d? \\d?\\d?\\d? \\d?\\d?";
+            this.myTCKimlikNoEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
+            this.myTCKimlikNoEdit1.Properties.MaxLength = 50;
+            this.myTCKimlikNoEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myTCKimlikNoEdit1.StatusBarDescription = "TC Kimlik No giriniz.";
+            this.myTCKimlikNoEdit1.TabIndex = 47;
+            // 
+            // myTelephoneNoTextEdit1
+            // 
+            this.myTelephoneNoTextEdit1.EnterMoveNextControl = true;
+            this.myTelephoneNoTextEdit1.Location = new System.Drawing.Point(553, 245);
+            this.myTelephoneNoTextEdit1.MenuManager = this.ribbonControl;
+            this.myTelephoneNoTextEdit1.Name = "myTelephoneNoTextEdit1";
+            this.myTelephoneNoTextEdit1.Properties.Appearance.Options.UseTextOptions = true;
+            this.myTelephoneNoTextEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myTelephoneNoTextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myTelephoneNoTextEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myTelephoneNoTextEdit1.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.myTelephoneNoTextEdit1.Properties.Mask.EditMask = "(\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?";
+            this.myTelephoneNoTextEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
+            this.myTelephoneNoTextEdit1.Properties.MaxLength = 50;
+            this.myTelephoneNoTextEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myTelephoneNoTextEdit1.StatusBarDescription = "Telefon No giriniz.";
+            this.myTelephoneNoTextEdit1.TabIndex = 50;
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myTelephoneNoTextEdit1);
+            this.Controls.Add(this.myTCKimlikNoEdit1);
+            this.Controls.Add(this.mySpinEdit1);
+            this.Controls.Add(this.mySimpleButton1);
             this.Controls.Add(this.myPictureEdit1);
             this.Controls.Add(this.myMemoEdit1);
             this.Controls.Add(this.myKodTextEdit1);
@@ -536,6 +615,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myKodTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myMemoEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mySpinEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myTCKimlikNoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myTelephoneNoTextEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -570,5 +652,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private UserControls.Controls.MyKodTextEdit myKodTextEdit1;
         private UserControls.Controls.MyMemoEdit myMemoEdit1;
         private UserControls.Controls.MyPictureEdit myPictureEdit1;
+        private UserControls.Controls.MySimpleButton mySimpleButton1;
+        private UserControls.Controls.MySpinEdit mySpinEdit1;
+        private UserControls.Controls.MyTCKimlikNoEdit myTCKimlikNoEdit1;
+        private UserControls.Controls.MyTelephoneNoTextEdit myTelephoneNoTextEdit1;
     }
 }

@@ -104,6 +104,18 @@
     <Compile Include="UserControls\Controls\MyPictureEdit.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UserControls\Controls\MySimpleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MySpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyTCKimlikNoEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyTelephoneNoTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UserControls\Controls\MyTextEdit.cs">
       <SubType>Component</SubType>
     </Compile>
