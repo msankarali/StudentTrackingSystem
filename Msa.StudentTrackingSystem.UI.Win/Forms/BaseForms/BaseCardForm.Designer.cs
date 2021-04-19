@@ -72,11 +72,13 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyTextEdit();
             this.myCalcEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCalcEdit();
             this.myCardEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCardEdit();
+            this.myComboBoxEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCalcEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCardEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myComboBoxEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -332,11 +334,29 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myCardEdit1.StatusBarDescription = "Kart No giriniz.";
             this.myCardEdit1.TabIndex = 11;
             // 
+            // myComboBoxEdit1
+            // 
+            this.myComboBoxEdit1.EnterMoveNextControl = true;
+            this.myComboBoxEdit1.Location = new System.Drawing.Point(34, 219);
+            this.myComboBoxEdit1.MenuManager = this.ribbonControl;
+            this.myComboBoxEdit1.Name = "myComboBoxEdit1";
+            this.myComboBoxEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myComboBoxEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.myComboBoxEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.myComboBoxEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myComboBoxEdit1.StatusBarDescription = null;
+            this.myComboBoxEdit1.StatusBarShortcut = "F4: ";
+            this.myComboBoxEdit1.StatusBarShortcutDescription = null;
+            this.myComboBoxEdit1.TabIndex = 14;
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myComboBoxEdit1);
             this.Controls.Add(this.myCardEdit1);
             this.Controls.Add(this.myCalcEdit1);
             this.Controls.Add(this.myTextEdit1);
@@ -354,6 +374,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCalcEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCardEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myComboBoxEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,5 +400,6 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private UserControls.Controls.MyTextEdit myTextEdit1;
         private UserControls.Controls.MyCalcEdit myCalcEdit1;
         private UserControls.Controls.MyCardEdit myCardEdit1;
+        private UserControls.Controls.MyComboBoxEdit myComboBoxEdit1;
     }
 }
