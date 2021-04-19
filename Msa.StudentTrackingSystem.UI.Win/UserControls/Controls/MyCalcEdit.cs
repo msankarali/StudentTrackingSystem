@@ -16,7 +16,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
     {
         public MyCalcEdit()
         {
-            Properties.Appearance.BackColor = Color.LightCyan;
+            Properties.AppearanceFocused.BackColor = Color.LightCyan;
             Properties.AllowNullInput = DefaultBoolean.False;
             Properties.EditMask = "n2";
         }

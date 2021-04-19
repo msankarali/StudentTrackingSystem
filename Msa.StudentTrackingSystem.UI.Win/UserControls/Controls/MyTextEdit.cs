@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
 {
     [ToolboxItem(true)]
-    public class MyTextEdit : TextEdit, IStatusBarShortcut
+    public class MyTextEdit : TextEdit, IStatusBarDescription
     {
         public MyTextEdit()
         {

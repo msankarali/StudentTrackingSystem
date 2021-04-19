@@ -70,9 +70,11 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.myButtonEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyButtonEdit();
             this.myTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyTextEdit();
+            this.myCalcEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCalcEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myCalcEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -292,11 +294,30 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myTextEdit1.StatusBarDescription = null;
             this.myTextEdit1.TabIndex = 5;
             // 
+            // myCalcEdit1
+            // 
+            this.myCalcEdit1.EnterMoveNextControl = true;
+            this.myCalcEdit1.Location = new System.Drawing.Point(34, 167);
+            this.myCalcEdit1.MenuManager = this.ribbonControl;
+            this.myCalcEdit1.Name = "myCalcEdit1";
+            this.myCalcEdit1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
+            this.myCalcEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myCalcEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myCalcEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.myCalcEdit1.Properties.Mask.EditMask = "n2";
+            this.myCalcEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myCalcEdit1.StatusBarDescription = null;
+            this.myCalcEdit1.StatusBarShortcut = "F4: ";
+            this.myCalcEdit1.StatusBarShortcutDescription = "Hesap Makinesi";
+            this.myCalcEdit1.TabIndex = 8;
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myCalcEdit1);
             this.Controls.Add(this.myTextEdit1);
             this.Controls.Add(this.myButtonEdit1);
             this.Controls.Add(this.ribbonStatusBar1);
@@ -310,6 +331,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myCalcEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,5 +355,6 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private DevExpress.XtraBars.BarStaticItem statusBarShortcutDescription;
         private UserControls.Controls.MyButtonEdit myButtonEdit1;
         private UserControls.Controls.MyTextEdit myTextEdit1;
+        private UserControls.Controls.MyCalcEdit myCalcEdit1;
     }
 }
