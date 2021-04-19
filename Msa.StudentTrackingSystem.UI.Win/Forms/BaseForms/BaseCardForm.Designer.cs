@@ -71,10 +71,12 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myButtonEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyButtonEdit();
             this.myTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyTextEdit();
             this.myCalcEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCalcEdit();
+            this.myCardEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCardEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCalcEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myCardEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -312,11 +314,30 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myCalcEdit1.StatusBarShortcutDescription = "Hesap Makinesi";
             this.myCalcEdit1.TabIndex = 8;
             // 
+            // myCardEdit1
+            // 
+            this.myCardEdit1.EnterMoveNextControl = true;
+            this.myCardEdit1.Location = new System.Drawing.Point(34, 193);
+            this.myCardEdit1.MenuManager = this.ribbonControl;
+            this.myCardEdit1.Name = "myCardEdit1";
+            this.myCardEdit1.Properties.Appearance.Options.UseTextOptions = true;
+            this.myCardEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myCardEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myCardEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myCardEdit1.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.myCardEdit1.Properties.Mask.EditMask = "\\d?\\d?\\d?\\d?-\\d?\\d?\\d?\\d?-\\d?\\d?\\d?\\d?-\\d?\\d?\\d?\\d?";
+            this.myCardEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
+            this.myCardEdit1.Properties.MaxLength = 50;
+            this.myCardEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myCardEdit1.StatusBarDescription = "Kart No giriniz.";
+            this.myCardEdit1.TabIndex = 11;
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myCardEdit1);
             this.Controls.Add(this.myCalcEdit1);
             this.Controls.Add(this.myTextEdit1);
             this.Controls.Add(this.myButtonEdit1);
@@ -332,6 +353,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCalcEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myCardEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,5 +378,6 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private UserControls.Controls.MyButtonEdit myButtonEdit1;
         private UserControls.Controls.MyTextEdit myTextEdit1;
         private UserControls.Controls.MyCalcEdit myCalcEdit1;
+        private UserControls.Controls.MyCardEdit myCardEdit1;
     }
 }
