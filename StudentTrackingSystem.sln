@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Msa.Dal", "Msa.Dal\Msa.Dal.csproj", "{C38047E8-8E2B-417D-9A0C-39D9835F2C48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Msa.StudentTrackingSystem.Bll", "Msa.StudentTrackingSystem.Bll\Msa.StudentTrackingSystem.Bll.csproj", "{23C1E7D3-8570-47B5-BC3C-ED6C6DED9A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Msa.StudentTrackingSystem.Data", "Msa.StudentTrackingSystem.Data\Msa.StudentTrackingSystem.Data.csproj", "{631E8716-0EE2-4936-AD0E-CC6BFFE10C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Msa.StudentTrackingSystem.Model", "Msa.StudentTrackingSystem.Model\Msa.StudentTrackingSystem.Model.csproj", "{B33AB442-5F11-4687-A360-528B79C6DA95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Msa.StudentTrackingSystem.Common", "Msa.StudentTrackingSystem.Common\Msa.StudentTrackingSystem.Common.csproj", "{D18840A1-4F2D-47D9-B723-0052855A54A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Msa.StudentTrackingSystem.UI.Win", "Msa.StudentTrackingSystem.UI.Win\Msa.StudentTrackingSystem.UI.Win.csproj", "{8D9E90A4-E685-48A0-86BB-8ADFDCF801EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C38047E8-8E2B-417D-9A0C-39D9835F2C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38047E8-8E2B-417D-9A0C-39D9835F2C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38047E8-8E2B-417D-9A0C-39D9835F2C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38047E8-8E2B-417D-9A0C-39D9835F2C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23C1E7D3-8570-47B5-BC3C-ED6C6DED9A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C1E7D3-8570-47B5-BC3C-ED6C6DED9A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C1E7D3-8570-47B5-BC3C-ED6C6DED9A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C1E7D3-8570-47B5-BC3C-ED6C6DED9A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{631E8716-0EE2-4936-AD0E-CC6BFFE10C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631E8716-0EE2-4936-AD0E-CC6BFFE10C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631E8716-0EE2-4936-AD0E-CC6BFFE10C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631E8716-0EE2-4936-AD0E-CC6BFFE10C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B33AB442-5F11-4687-A360-528B79C6DA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33AB442-5F11-4687-A360-528B79C6DA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33AB442-5F11-4687-A360-528B79C6DA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33AB442-5F11-4687-A360-528B79C6DA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18840A1-4F2D-47D9-B723-0052855A54A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18840A1-4F2D-47D9-B723-0052855A54A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18840A1-4F2D-47D9-B723-0052855A54A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18840A1-4F2D-47D9-B723-0052855A54A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D9E90A4-E685-48A0-86BB-8ADFDCF801EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9E90A4-E685-48A0-86BB-8ADFDCF801EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D9E90A4-E685-48A0-86BB-8ADFDCF801EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D9E90A4-E685-48A0-86BB-8ADFDCF801EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2511929A-8917-4E3C-A9BD-9A41A415B0C5}
+	EndGlobalSection
+EndGlobal
