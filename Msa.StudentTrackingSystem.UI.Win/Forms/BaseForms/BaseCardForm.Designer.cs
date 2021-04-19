@@ -80,6 +80,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myIbanTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyIbanTextEdit();
             this.myKodTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyKodTextEdit();
             this.myMemoEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyMemoEdit();
+            this.myPictureEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyPictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
@@ -93,6 +94,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myIbanTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myKodTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myMemoEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myPictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -473,11 +475,33 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myMemoEdit1.StatusBarDescription = "Açıklama giriniz.";
             this.myMemoEdit1.TabIndex = 35;
             // 
+            // myPictureEdit1
+            // 
+            this.myPictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.myPictureEdit1.EnterMoveNextControl = true;
+            this.myPictureEdit1.Location = new System.Drawing.Point(553, 113);
+            this.myPictureEdit1.MenuManager = this.ribbonControl;
+            this.myPictureEdit1.Name = "myPictureEdit1";
+            this.myPictureEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.myPictureEdit1.Properties.Appearance.Options.UseForeColor = true;
+            this.myPictureEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myPictureEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myPictureEdit1.Properties.NullText = "Resim yok";
+            this.myPictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.myPictureEdit1.Properties.ShowMenu = false;
+            this.myPictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.myPictureEdit1.Size = new System.Drawing.Size(167, 100);
+            this.myPictureEdit1.StatusBarDescription = null;
+            this.myPictureEdit1.StatusBarShortcut = "F4: ";
+            this.myPictureEdit1.StatusBarShortcutDescription = null;
+            this.myPictureEdit1.TabIndex = 38;
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myPictureEdit1);
             this.Controls.Add(this.myMemoEdit1);
             this.Controls.Add(this.myKodTextEdit1);
             this.Controls.Add(this.myIbanTextEdit1);
@@ -511,6 +535,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myIbanTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myKodTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myMemoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myPictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -544,5 +569,6 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private UserControls.Controls.MyIbanTextEdit myIbanTextEdit1;
         private UserControls.Controls.MyKodTextEdit myKodTextEdit1;
         private UserControls.Controls.MyMemoEdit myMemoEdit1;
+        private UserControls.Controls.MyPictureEdit myPictureEdit1;
     }
 }
