@@ -36,12 +36,12 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
 
                 if (newValue == oldValue) return;
                 _id = value;
-                IdChanged(this, new IdChangedEventArgs(oldValue, newValue));
+
+                IdChanged?.Invoke(this, new IdChangedEventArgs(oldValue, newValue));
             }
         }
 
-
-        public event EventHandler<IdChangedEventArgs> IdChanged = delegate { };
+        public event EventHandler<IdChangedEventArgs> IdChanged;
     }
 
     public class IdChangedEventArgs : EventArgs
