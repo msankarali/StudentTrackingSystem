@@ -31,31 +31,31 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Navigators
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InsUptNavigator));
-            this.controlNavigator1 = new DevExpress.XtraEditors.ControlNavigator();
+            this.navigator = new DevExpress.XtraEditors.ControlNavigator();
             this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).BeginInit();
             this.SuspendLayout();
             // 
-            // controlNavigator1
+            // navigator
             // 
-            this.controlNavigator1.Buttons.Append.ImageIndex = 6;
-            this.controlNavigator1.Buttons.CancelEdit.Visible = false;
-            this.controlNavigator1.Buttons.Edit.Visible = false;
-            this.controlNavigator1.Buttons.EndEdit.Visible = false;
-            this.controlNavigator1.Buttons.First.ImageIndex = 0;
-            this.controlNavigator1.Buttons.ImageList = this.imageCollection;
-            this.controlNavigator1.Buttons.Last.ImageIndex = 5;
-            this.controlNavigator1.Buttons.Next.ImageIndex = 3;
-            this.controlNavigator1.Buttons.NextPage.Visible = false;
-            this.controlNavigator1.Buttons.Prev.ImageIndex = 2;
-            this.controlNavigator1.Buttons.PrevPage.Visible = false;
-            this.controlNavigator1.Buttons.Remove.ImageIndex = 7;
-            this.controlNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.controlNavigator1.Location = new System.Drawing.Point(0, 216);
-            this.controlNavigator1.Name = "controlNavigator1";
-            this.controlNavigator1.Size = new System.Drawing.Size(556, 24);
-            this.controlNavigator1.TabIndex = 0;
-            this.controlNavigator1.Text = "controlNavigator1";
+            this.navigator.Buttons.Append.ImageIndex = 6;
+            this.navigator.Buttons.CancelEdit.Visible = false;
+            this.navigator.Buttons.Edit.Visible = false;
+            this.navigator.Buttons.EndEdit.Visible = false;
+            this.navigator.Buttons.First.ImageIndex = 0;
+            this.navigator.Buttons.ImageList = this.imageCollection;
+            this.navigator.Buttons.Last.ImageIndex = 5;
+            this.navigator.Buttons.Next.ImageIndex = 3;
+            this.navigator.Buttons.NextPage.Visible = false;
+            this.navigator.Buttons.Prev.ImageIndex = 2;
+            this.navigator.Buttons.PrevPage.Visible = false;
+            this.navigator.Buttons.Remove.ImageIndex = 7;
+            this.navigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.navigator.Location = new System.Drawing.Point(0, 0);
+            this.navigator.Name = "navigator";
+            this.navigator.Size = new System.Drawing.Size(556, 24);
+            this.navigator.TabIndex = 0;
+            this.navigator.Text = "controlNavigator1";
             // 
             // imageCollection
             // 
@@ -81,7 +81,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Navigators
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.controlNavigator1);
+            this.Controls.Add(this.navigator);
             this.Name = "InsUptNavigator";
             this.Size = new System.Drawing.Size(556, 24);
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).EndInit();
@@ -91,7 +91,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Navigators
 
         #endregion
 
-        private DevExpress.XtraEditors.ControlNavigator controlNavigator1;
+        private DevExpress.XtraEditors.ControlNavigator navigator;
         private DevExpress.Utils.ImageCollection imageCollection;
     }
 }

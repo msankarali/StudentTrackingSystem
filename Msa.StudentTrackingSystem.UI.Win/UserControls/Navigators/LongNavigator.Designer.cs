@@ -31,35 +31,35 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Navigators
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LongNavigator));
-            this.controlNavigator1 = new DevExpress.XtraEditors.ControlNavigator();
+            this.navigator = new DevExpress.XtraEditors.ControlNavigator();
             this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).BeginInit();
             this.SuspendLayout();
             // 
-            // controlNavigator1
+            // navigator
             // 
-            this.controlNavigator1.Appearance.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.controlNavigator1.Appearance.Options.UseForeColor = true;
-            this.controlNavigator1.Buttons.Append.Visible = false;
-            this.controlNavigator1.Buttons.CancelEdit.Visible = false;
-            this.controlNavigator1.Buttons.Edit.Visible = false;
-            this.controlNavigator1.Buttons.EndEdit.Visible = false;
-            this.controlNavigator1.Buttons.First.ImageIndex = 0;
-            this.controlNavigator1.Buttons.ImageList = this.imageCollection;
-            this.controlNavigator1.Buttons.Last.ImageIndex = 5;
-            this.controlNavigator1.Buttons.Next.ImageIndex = 3;
-            this.controlNavigator1.Buttons.NextPage.ImageIndex = 4;
-            this.controlNavigator1.Buttons.Prev.ImageIndex = 2;
-            this.controlNavigator1.Buttons.PrevPage.ImageIndex = 1;
-            this.controlNavigator1.Buttons.Remove.Visible = false;
-            this.controlNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.controlNavigator1.Location = new System.Drawing.Point(0, 0);
-            this.controlNavigator1.Name = "controlNavigator1";
-            this.controlNavigator1.Size = new System.Drawing.Size(565, 24);
-            this.controlNavigator1.TabIndex = 0;
-            this.controlNavigator1.Text = "controlNavigator1";
-            this.controlNavigator1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Begin;
-            this.controlNavigator1.TextStringFormat = "Kartlar ( {0} / {1} )";
+            this.navigator.Appearance.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.navigator.Appearance.Options.UseForeColor = true;
+            this.navigator.Buttons.Append.Visible = false;
+            this.navigator.Buttons.CancelEdit.Visible = false;
+            this.navigator.Buttons.Edit.Visible = false;
+            this.navigator.Buttons.EndEdit.Visible = false;
+            this.navigator.Buttons.First.ImageIndex = 0;
+            this.navigator.Buttons.ImageList = this.imageCollection;
+            this.navigator.Buttons.Last.ImageIndex = 5;
+            this.navigator.Buttons.Next.ImageIndex = 3;
+            this.navigator.Buttons.NextPage.ImageIndex = 4;
+            this.navigator.Buttons.Prev.ImageIndex = 2;
+            this.navigator.Buttons.PrevPage.ImageIndex = 1;
+            this.navigator.Buttons.Remove.Visible = false;
+            this.navigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.navigator.Location = new System.Drawing.Point(0, 0);
+            this.navigator.Name = "navigator";
+            this.navigator.Size = new System.Drawing.Size(565, 24);
+            this.navigator.TabIndex = 0;
+            this.navigator.Text = "controlNavigator1";
+            this.navigator.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Begin;
+            this.navigator.TextStringFormat = "Kartlar ( {0} / {1} )";
             // 
             // imageCollection
             // 
@@ -81,7 +81,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Navigators
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.controlNavigator1);
+            this.Controls.Add(this.navigator);
             this.Name = "LongNavigator";
             this.Size = new System.Drawing.Size(565, 24);
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).EndInit();
@@ -91,7 +91,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Navigators
 
         #endregion
 
-        private DevExpress.XtraEditors.ControlNavigator controlNavigator1;
+        private DevExpress.XtraEditors.ControlNavigator navigator;
         private DevExpress.Utils.ImageCollection imageCollection;
     }
 }
