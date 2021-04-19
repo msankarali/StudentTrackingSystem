@@ -76,6 +76,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myCheckedComboBoxEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCheckedComboBoxEdit();
             this.myDateEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyDateEdit();
             this.myCheckEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCheckEdit();
+            this.myFilterControl1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyFilterControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
@@ -409,11 +410,23 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myCheckEdit1.StatusBarDescription = null;
             this.myCheckEdit1.TabIndex = 23;
             // 
+            // myFilterControl1
+            // 
+            this.myFilterControl1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.myFilterControl1.Location = new System.Drawing.Point(207, 113);
+            this.myFilterControl1.Name = "myFilterControl1";
+            this.myFilterControl1.ShowGroupCommandsIcon = true;
+            this.myFilterControl1.Size = new System.Drawing.Size(200, 100);
+            this.myFilterControl1.StatusBarDescription = "Filtre metni giriniz.";
+            this.myFilterControl1.TabIndex = 26;
+            this.myFilterControl1.Text = "myFilterControl1";
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myFilterControl1);
             this.Controls.Add(this.myCheckEdit1);
             this.Controls.Add(this.myDateEdit1);
             this.Controls.Add(this.myCheckedComboBoxEdit1);
@@ -469,5 +482,6 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private UserControls.Controls.MyCheckedComboBoxEdit myCheckedComboBoxEdit1;
         private UserControls.Controls.MyDateEdit myDateEdit1;
         private UserControls.Controls.MyCheckEdit myCheckEdit1;
+        private UserControls.Controls.MyFilterControl myFilterControl1;
     }
 }
