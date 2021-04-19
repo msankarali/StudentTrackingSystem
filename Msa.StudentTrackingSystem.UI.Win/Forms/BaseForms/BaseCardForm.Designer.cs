@@ -74,6 +74,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myCardEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCardEdit();
             this.myComboBoxEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyComboBoxEdit();
             this.myCheckedComboBoxEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCheckedComboBoxEdit();
+            this.myDateEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyDateEdit();
+            this.myCheckEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
@@ -81,6 +83,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myCardEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myComboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCheckedComboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myDateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myDateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myCheckEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -369,11 +374,48 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myCheckedComboBoxEdit1.StatusBarShortcutDescription = null;
             this.myCheckedComboBoxEdit1.TabIndex = 17;
             // 
+            // myDateEdit1
+            // 
+            this.myDateEdit1.EditValue = null;
+            this.myDateEdit1.EnterMoveNextControl = true;
+            this.myDateEdit1.Location = new System.Drawing.Point(34, 271);
+            this.myDateEdit1.MenuManager = this.ribbonControl;
+            this.myDateEdit1.Name = "myDateEdit1";
+            this.myDateEdit1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
+            this.myDateEdit1.Properties.Appearance.Options.UseTextOptions = true;
+            this.myDateEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myDateEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myDateEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myDateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.myDateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.myDateEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret;
+            this.myDateEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myDateEdit1.StatusBarDescription = null;
+            this.myDateEdit1.StatusBarShortcut = "F4: ";
+            this.myDateEdit1.StatusBarShortcutDescription = "Tarih seç";
+            this.myDateEdit1.TabIndex = 20;
+            // 
+            // myCheckEdit1
+            // 
+            this.myCheckEdit1.Location = new System.Drawing.Point(34, 297);
+            this.myCheckEdit1.MenuManager = this.ribbonControl;
+            this.myCheckEdit1.Name = "myCheckEdit1";
+            this.myCheckEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.Transparent;
+            this.myCheckEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myCheckEdit1.Properties.Caption = "myCheckEdit1";
+            this.myCheckEdit1.Size = new System.Drawing.Size(75, 20);
+            this.myCheckEdit1.StatusBarDescription = null;
+            this.myCheckEdit1.TabIndex = 23;
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myCheckEdit1);
+            this.Controls.Add(this.myDateEdit1);
             this.Controls.Add(this.myCheckedComboBoxEdit1);
             this.Controls.Add(this.myComboBoxEdit1);
             this.Controls.Add(this.myCardEdit1);
@@ -395,6 +437,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myCardEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myComboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCheckedComboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myDateEdit1.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myDateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myCheckEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,5 +467,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private UserControls.Controls.MyCardEdit myCardEdit1;
         private UserControls.Controls.MyComboBoxEdit myComboBoxEdit1;
         private UserControls.Controls.MyCheckedComboBoxEdit myCheckedComboBoxEdit1;
+        private UserControls.Controls.MyDateEdit myDateEdit1;
+        private UserControls.Controls.MyCheckEdit myCheckEdit1;
     }
 }
