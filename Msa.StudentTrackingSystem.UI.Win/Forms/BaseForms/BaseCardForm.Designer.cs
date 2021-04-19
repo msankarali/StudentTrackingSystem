@@ -79,6 +79,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myFilterControl1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyFilterControl();
             this.myIbanTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyIbanTextEdit();
             this.myKodTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyKodTextEdit();
+            this.myMemoEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyMemoEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
@@ -91,6 +92,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myCheckEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myIbanTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myKodTextEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myMemoEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -458,11 +460,25 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myKodTextEdit1.StatusBarDescription = "Kod giriniz.";
             this.myKodTextEdit1.TabIndex = 32;
             // 
+            // myMemoEdit1
+            // 
+            this.myMemoEdit1.EnterMoveNextControl = true;
+            this.myMemoEdit1.Location = new System.Drawing.Point(380, 112);
+            this.myMemoEdit1.MenuManager = this.ribbonControl;
+            this.myMemoEdit1.Name = "myMemoEdit1";
+            this.myMemoEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myMemoEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myMemoEdit1.Properties.MaxLength = 500;
+            this.myMemoEdit1.Size = new System.Drawing.Size(167, 101);
+            this.myMemoEdit1.StatusBarDescription = "Açıklama giriniz.";
+            this.myMemoEdit1.TabIndex = 35;
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myMemoEdit1);
             this.Controls.Add(this.myKodTextEdit1);
             this.Controls.Add(this.myIbanTextEdit1);
             this.Controls.Add(this.myFilterControl1);
@@ -494,6 +510,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myCheckEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myIbanTextEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myKodTextEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myMemoEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -526,5 +543,6 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private UserControls.Controls.MyFilterControl myFilterControl1;
         private UserControls.Controls.MyIbanTextEdit myIbanTextEdit1;
         private UserControls.Controls.MyKodTextEdit myKodTextEdit1;
+        private UserControls.Controls.MyMemoEdit myMemoEdit1;
     }
 }
