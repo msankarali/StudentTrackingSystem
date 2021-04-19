@@ -29,56 +29,56 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem11 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem21 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem11 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipItem toolTipItem22 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem12 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem23 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem12 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipItem toolTipItem24 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem13 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem25 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem13 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipItem toolTipItem26 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip14 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem14 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem27 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem14 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipItem toolTipItem28 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip15 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem15 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem29 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem15 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipItem toolTipItem30 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip16 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem16 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem31 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem16 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipItem toolTipItem32 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip17 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem17 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem33 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem17 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipItem toolTipItem34 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip18 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem18 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem35 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem18 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipItem toolTipItem36 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip19 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem19 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem37 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem19 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipItem toolTipItem38 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip20 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem20 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem39 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem20 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipItem toolTipItem40 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem1 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem2 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem5 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem3 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem6 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem7 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem4 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem8 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem5 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem11 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem6 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem12 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem7 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem13 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem7 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem14 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem15 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem8 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem16 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem9 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem17 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem9 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem18 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem10 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem19 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem10 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipItem toolTipItem20 = new DevExpress.Utils.ToolTipItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnNew = new DevExpress.XtraBars.BarButtonItem();
             this.btnDelete = new DevExpress.XtraBars.BarButtonItem();
@@ -141,16 +141,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnNew.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.addfile_32x32;
             this.btnNew.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.Insert);
             this.btnNew.Name = "btnNew";
-            toolTipTitleItem11.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
-            toolTipTitleItem11.Text = "(Insert)";
-            toolTipItem21.Text = "Yeni Kart ekle";
-            toolTipItem22.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
-            toolTipItem22.Text = "Formu Yeni Kart Ekleme modunda açar.";
-            superToolTip11.Items.Add(toolTipTitleItem11);
-            superToolTip11.Items.Add(toolTipItem21);
-            superToolTip11.Items.Add(toolTipSeparatorItem11);
-            superToolTip11.Items.Add(toolTipItem22);
-            this.btnNew.SuperTip = superToolTip11;
+            toolTipTitleItem1.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
+            toolTipTitleItem1.Text = "(Insert)";
+            toolTipItem1.Text = "Yeni Kart ekle";
+            toolTipItem2.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipItem2.Text = "Formu Yeni Kart Ekleme modunda açar.";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            superToolTip1.Items.Add(toolTipItem1);
+            superToolTip1.Items.Add(toolTipSeparatorItem1);
+            superToolTip1.Items.Add(toolTipItem2);
+            this.btnNew.SuperTip = superToolTip1;
             // 
             // btnDelete
             // 
@@ -160,16 +160,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnDelete.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.deletelist_32x32;
             this.btnDelete.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.Delete);
             this.btnDelete.Name = "btnDelete";
-            toolTipTitleItem12.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
-            toolTipTitleItem12.Text = "(Delete)";
-            toolTipItem23.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
-            toolTipItem23.Text = "Seçilen Kartı Sil";
-            toolTipItem24.Text = "Seçilen Kart Onayınız alınarak silinir.";
-            superToolTip12.Items.Add(toolTipTitleItem12);
-            superToolTip12.Items.Add(toolTipItem23);
-            superToolTip12.Items.Add(toolTipSeparatorItem12);
-            superToolTip12.Items.Add(toolTipItem24);
-            this.btnDelete.SuperTip = superToolTip12;
+            toolTipTitleItem2.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
+            toolTipTitleItem2.Text = "(Delete)";
+            toolTipItem3.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipItem3.Text = "Seçilen Kartı Sil";
+            toolTipItem4.Text = "Seçilen Kart Onayınız alınarak silinir.";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            superToolTip2.Items.Add(toolTipItem3);
+            superToolTip2.Items.Add(toolTipSeparatorItem2);
+            superToolTip2.Items.Add(toolTipItem4);
+            this.btnDelete.SuperTip = superToolTip2;
             // 
             // btnSelect
             // 
@@ -179,16 +179,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnSelect.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.apply_32x32;
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.ShortcutKeyDisplayString = "Enter";
-            toolTipTitleItem13.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
-            toolTipTitleItem13.Text = "(Enter)";
-            toolTipItem25.Text = "Kartı Seç";
-            toolTipItem26.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
-            toolTipItem26.Text = "Seçilen Kart Önceki Karta aktarılır.";
-            superToolTip13.Items.Add(toolTipTitleItem13);
-            superToolTip13.Items.Add(toolTipItem25);
-            superToolTip13.Items.Add(toolTipSeparatorItem13);
-            superToolTip13.Items.Add(toolTipItem26);
-            this.btnSelect.SuperTip = superToolTip13;
+            toolTipTitleItem3.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
+            toolTipTitleItem3.Text = "(Enter)";
+            toolTipItem5.Text = "Kartı Seç";
+            toolTipItem6.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipItem6.Text = "Seçilen Kart Önceki Karta aktarılır.";
+            superToolTip3.Items.Add(toolTipTitleItem3);
+            superToolTip3.Items.Add(toolTipItem5);
+            superToolTip3.Items.Add(toolTipSeparatorItem3);
+            superToolTip3.Items.Add(toolTipItem6);
+            this.btnSelect.SuperTip = superToolTip3;
             // 
             // btnEdit
             // 
@@ -198,16 +198,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnEdit.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.edit_32x32;
             this.btnEdit.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F3);
             this.btnEdit.Name = "btnEdit";
-            toolTipTitleItem14.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
-            toolTipTitleItem14.Text = "(F3)";
-            toolTipItem27.Text = "Seçilen Kartı Düzenle";
-            toolTipItem28.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
-            toolTipItem28.Text = "Seçilen Kartı Düzenleme modunda açar.";
-            superToolTip14.Items.Add(toolTipTitleItem14);
-            superToolTip14.Items.Add(toolTipItem27);
-            superToolTip14.Items.Add(toolTipSeparatorItem14);
-            superToolTip14.Items.Add(toolTipItem28);
-            this.btnEdit.SuperTip = superToolTip14;
+            toolTipTitleItem4.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
+            toolTipTitleItem4.Text = "(F3)";
+            toolTipItem7.Text = "Seçilen Kartı Düzenle";
+            toolTipItem8.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipItem8.Text = "Seçilen Kartı Düzenleme modunda açar.";
+            superToolTip4.Items.Add(toolTipTitleItem4);
+            superToolTip4.Items.Add(toolTipItem7);
+            superToolTip4.Items.Add(toolTipSeparatorItem4);
+            superToolTip4.Items.Add(toolTipItem8);
+            this.btnEdit.SuperTip = superToolTip4;
             // 
             // btnRefresh
             // 
@@ -217,16 +217,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnRefresh.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.convert_32x32;
             this.btnRefresh.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F5);
             this.btnRefresh.Name = "btnRefresh";
-            toolTipTitleItem15.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
-            toolTipTitleItem15.Text = "(F5)";
-            toolTipItem29.Text = "Tablo Verilerini yenile";
-            toolTipItem30.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
-            toolTipItem30.Text = "Tablo Verileri yeniden sorgulanarak yenilenir.";
-            superToolTip15.Items.Add(toolTipTitleItem15);
-            superToolTip15.Items.Add(toolTipItem29);
-            superToolTip15.Items.Add(toolTipSeparatorItem15);
-            superToolTip15.Items.Add(toolTipItem30);
-            this.btnRefresh.SuperTip = superToolTip15;
+            toolTipTitleItem5.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
+            toolTipTitleItem5.Text = "(F5)";
+            toolTipItem9.Text = "Tablo Verilerini yenile";
+            toolTipItem10.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipItem10.Text = "Tablo Verileri yeniden sorgulanarak yenilenir.";
+            superToolTip5.Items.Add(toolTipTitleItem5);
+            superToolTip5.Items.Add(toolTipItem9);
+            superToolTip5.Items.Add(toolTipSeparatorItem5);
+            superToolTip5.Items.Add(toolTipItem10);
+            this.btnRefresh.SuperTip = superToolTip5;
             // 
             // btnFilter
             // 
@@ -236,16 +236,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnFilter.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.crossdatasourcefiltering_32x32;
             this.btnFilter.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F8);
             this.btnFilter.Name = "btnFilter";
-            toolTipTitleItem16.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
-            toolTipTitleItem16.Text = "(F8)";
-            toolTipItem31.Text = "Tablo Verilerine Filtre uygula";
-            toolTipItem32.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
-            toolTipItem32.Text = "Aktif Tabloya uygulanmak üzere Filtre seçilir.";
-            superToolTip16.Items.Add(toolTipTitleItem16);
-            superToolTip16.Items.Add(toolTipItem31);
-            superToolTip16.Items.Add(toolTipSeparatorItem16);
-            superToolTip16.Items.Add(toolTipItem32);
-            this.btnFilter.SuperTip = superToolTip16;
+            toolTipTitleItem6.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
+            toolTipTitleItem6.Text = "(F8)";
+            toolTipItem11.Text = "Tablo Verilerine Filtre uygula";
+            toolTipItem12.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipItem12.Text = "Aktif Tabloya uygulanmak üzere Filtre seçilir.";
+            superToolTip6.Items.Add(toolTipTitleItem6);
+            superToolTip6.Items.Add(toolTipItem11);
+            superToolTip6.Items.Add(toolTipSeparatorItem6);
+            superToolTip6.Items.Add(toolTipItem12);
+            this.btnFilter.SuperTip = superToolTip6;
             // 
             // btnColumns
             // 
@@ -255,16 +255,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnColumns.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.weekend_32x32;
             this.btnColumns.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O));
             this.btnColumns.Name = "btnColumns";
-            toolTipTitleItem17.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
-            toolTipTitleItem17.Text = "(Ctrl+O)";
-            toolTipItem33.Text = "Sütun Seç";
-            toolTipItem34.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
-            toolTipItem34.Text = "Tabloya eklemek için Sütun seçimi yapılır.";
-            superToolTip17.Items.Add(toolTipTitleItem17);
-            superToolTip17.Items.Add(toolTipItem33);
-            superToolTip17.Items.Add(toolTipSeparatorItem17);
-            superToolTip17.Items.Add(toolTipItem34);
-            this.btnColumns.SuperTip = superToolTip17;
+            toolTipTitleItem7.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
+            toolTipTitleItem7.Text = "(Ctrl+O)";
+            toolTipItem13.Text = "Sütun Seç";
+            toolTipItem14.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipItem14.Text = "Tabloya eklemek için Sütun seçimi yapılır.";
+            superToolTip7.Items.Add(toolTipTitleItem7);
+            superToolTip7.Items.Add(toolTipItem13);
+            superToolTip7.Items.Add(toolTipSeparatorItem7);
+            superToolTip7.Items.Add(toolTipItem14);
+            this.btnColumns.SuperTip = superToolTip7;
             // 
             // btnPrint
             // 
@@ -274,16 +274,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnPrint.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.print_32x32;
             this.btnPrint.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P));
             this.btnPrint.Name = "btnPrint";
-            toolTipTitleItem18.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
-            toolTipTitleItem18.Text = "(Ctrl+P)";
-            toolTipItem35.Text = "Tablo Yazdırma Seçenekleri";
-            toolTipItem36.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
-            toolTipItem36.Text = "Tablo Yazdırma Seçenekleri formu açılır.";
-            superToolTip18.Items.Add(toolTipTitleItem18);
-            superToolTip18.Items.Add(toolTipItem35);
-            superToolTip18.Items.Add(toolTipSeparatorItem18);
-            superToolTip18.Items.Add(toolTipItem36);
-            this.btnPrint.SuperTip = superToolTip18;
+            toolTipTitleItem8.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
+            toolTipTitleItem8.Text = "(Ctrl+P)";
+            toolTipItem15.Text = "Tablo Yazdırma Seçenekleri";
+            toolTipItem16.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipItem16.Text = "Tablo Yazdırma Seçenekleri formu açılır.";
+            superToolTip8.Items.Add(toolTipTitleItem8);
+            superToolTip8.Items.Add(toolTipItem15);
+            superToolTip8.Items.Add(toolTipSeparatorItem8);
+            superToolTip8.Items.Add(toolTipItem16);
+            this.btnPrint.SuperTip = superToolTip8;
             // 
             // btnClose
             // 
@@ -293,16 +293,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnClose.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.close_32x32;
             this.btnClose.Name = "btnClose";
             this.btnClose.ShortcutKeyDisplayString = "Esc";
-            toolTipTitleItem19.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
-            toolTipTitleItem19.Text = "(Esc)";
-            toolTipItem37.Text = "Çıkış";
-            toolTipItem38.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
-            toolTipItem38.Text = "Form kapatılarak çıkılır.";
-            superToolTip19.Items.Add(toolTipTitleItem19);
-            superToolTip19.Items.Add(toolTipItem37);
-            superToolTip19.Items.Add(toolTipSeparatorItem19);
-            superToolTip19.Items.Add(toolTipItem38);
-            this.btnClose.SuperTip = superToolTip19;
+            toolTipTitleItem9.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
+            toolTipTitleItem9.Text = "(Esc)";
+            toolTipItem17.Text = "Çıkış";
+            toolTipItem18.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipItem18.Text = "Form kapatılarak çıkılır.";
+            superToolTip9.Items.Add(toolTipTitleItem9);
+            superToolTip9.Items.Add(toolTipItem17);
+            superToolTip9.Items.Add(toolTipSeparatorItem9);
+            superToolTip9.Items.Add(toolTipItem18);
+            this.btnClose.SuperTip = superToolTip9;
             // 
             // btnSend
             // 
@@ -311,16 +311,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnSend.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.export_16x16;
             this.btnSend.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.export_32x32;
             this.btnSend.Name = "btnSend";
-            toolTipTitleItem20.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
-            toolTipTitleItem20.Text = "(F12)";
-            toolTipItem39.Text = "Dosyaya Gönder";
-            toolTipItem40.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
-            toolTipItem40.Text = "İlgili Tabloyu belirlediğiniz Dosya Biçimine göre Dosyaya aktarıp, Dosyayı açar.";
-            superToolTip20.Items.Add(toolTipTitleItem20);
-            superToolTip20.Items.Add(toolTipItem39);
-            superToolTip20.Items.Add(toolTipSeparatorItem20);
-            superToolTip20.Items.Add(toolTipItem40);
-            this.btnSend.SuperTip = superToolTip20;
+            toolTipTitleItem10.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
+            toolTipTitleItem10.Text = "(F12)";
+            toolTipItem19.Text = "Dosyaya Gönder";
+            toolTipItem20.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipItem20.Text = "İlgili Tabloyu belirlediğiniz Dosya Biçimine göre Dosyaya aktarıp, Dosyayı açar.";
+            superToolTip10.Items.Add(toolTipTitleItem10);
+            superToolTip10.Items.Add(toolTipItem19);
+            superToolTip10.Items.Add(toolTipSeparatorItem10);
+            superToolTip10.Items.Add(toolTipItem20);
+            this.btnSend.SuperTip = superToolTip10;
             // 
             // ribbonPage1
             // 

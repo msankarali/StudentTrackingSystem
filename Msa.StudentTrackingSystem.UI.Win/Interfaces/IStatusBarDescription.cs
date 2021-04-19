@@ -1,6 +1,6 @@
 ﻿namespace Msa.StudentTrackingSystem.UI.Win.Interfaces
 {
-    public interface IStatusBarDescription
+    public interface IStatusBarShortcut
     {
         string StatusBarDescription { get; set; }
     }

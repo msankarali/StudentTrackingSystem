@@ -3,6 +3,7 @@ using DevExpress.XtraEditors.Controls;
 using Msa.StudentTrackingSystem.UI.Win.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
 {
+    [ToolboxItem(true)]
     public class MyButtonEdit : ButtonEdit, IStatusBarShortcut
     {
-        private long? _id;
 
         public MyButtonEdit()
         {
@@ -25,7 +26,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
         public string StatusBarShortcut { get; set; } = "F4 :";
         public string StatusBarShortcutDescription { get; set; }
 
-
+        #region Events
+        private long? _id;
+        [Browsable(false)]
         public long? Id
         {
             get => _id;
@@ -42,6 +45,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
         }
 
         public event EventHandler<IdChangedEventArgs> IdChanged = delegate { };
+
+        #endregion
     }
 
     public class IdChangedEventArgs : EventArgs

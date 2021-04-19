@@ -68,7 +68,11 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.myButtonEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyButtonEdit();
+            this.myTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -257,11 +261,44 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
             // 
+            // myButtonEdit1
+            // 
+            this.myButtonEdit1.EnterMoveNextControl = true;
+            this.myButtonEdit1.Id = null;
+            this.myButtonEdit1.Location = new System.Drawing.Point(34, 115);
+            this.myButtonEdit1.MenuManager = this.ribbonControl;
+            this.myButtonEdit1.Name = "myButtonEdit1";
+            this.myButtonEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myButtonEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myButtonEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.myButtonEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.myButtonEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myButtonEdit1.StatusBarDescription = null;
+            this.myButtonEdit1.StatusBarShortcut = "F4 :";
+            this.myButtonEdit1.StatusBarShortcutDescription = null;
+            this.myButtonEdit1.TabIndex = 2;
+            // 
+            // myTextEdit1
+            // 
+            this.myTextEdit1.EnterMoveNextControl = true;
+            this.myTextEdit1.Location = new System.Drawing.Point(34, 141);
+            this.myTextEdit1.MenuManager = this.ribbonControl;
+            this.myTextEdit1.Name = "myTextEdit1";
+            this.myTextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myTextEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myTextEdit1.Properties.MaxLength = 50;
+            this.myTextEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myTextEdit1.StatusBarDescription = null;
+            this.myTextEdit1.TabIndex = 5;
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myTextEdit1);
+            this.Controls.Add(this.myButtonEdit1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl);
             this.IconOptions.ShowIcon = false;
@@ -271,6 +308,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.ShowInTaskbar = false;
             this.StatusBar = this.ribbonStatusBar1;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,5 +331,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private DevExpress.XtraBars.BarStaticItem statusBarDescription;
         private DevExpress.XtraBars.BarStaticItem statusBarShortcut;
         private DevExpress.XtraBars.BarStaticItem statusBarShortcutDescription;
+        private UserControls.Controls.MyButtonEdit myButtonEdit1;
+        private UserControls.Controls.MyTextEdit myTextEdit1;
     }
 }
