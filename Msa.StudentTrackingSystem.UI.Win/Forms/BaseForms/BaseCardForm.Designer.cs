@@ -77,6 +77,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myDateEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyDateEdit();
             this.myCheckEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCheckEdit();
             this.myFilterControl1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyFilterControl();
+            this.myIbanTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyIbanTextEdit();
+            this.myKodTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyKodTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
@@ -87,6 +89,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myDateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCheckEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myIbanTextEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myKodTextEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -412,20 +416,55 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             // 
             // myFilterControl1
             // 
-            this.myFilterControl1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.myFilterControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.myFilterControl1.Location = new System.Drawing.Point(207, 113);
             this.myFilterControl1.Name = "myFilterControl1";
             this.myFilterControl1.ShowGroupCommandsIcon = true;
-            this.myFilterControl1.Size = new System.Drawing.Size(200, 100);
+            this.myFilterControl1.Size = new System.Drawing.Size(167, 100);
             this.myFilterControl1.StatusBarDescription = "Filtre metni giriniz.";
             this.myFilterControl1.TabIndex = 26;
             this.myFilterControl1.Text = "myFilterControl1";
+            // 
+            // myIbanTextEdit1
+            // 
+            this.myIbanTextEdit1.EnterMoveNextControl = true;
+            this.myIbanTextEdit1.Location = new System.Drawing.Point(207, 219);
+            this.myIbanTextEdit1.MenuManager = this.ribbonControl;
+            this.myIbanTextEdit1.Name = "myIbanTextEdit1";
+            this.myIbanTextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myIbanTextEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myIbanTextEdit1.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.myIbanTextEdit1.Properties.Mask.EditMask = "TR\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?\\d?\\d? \\d?\\d?";
+            this.myIbanTextEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
+            this.myIbanTextEdit1.Properties.MaxLength = 50;
+            this.myIbanTextEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myIbanTextEdit1.StatusBarDescription = "IBAN No giriniz.";
+            this.myIbanTextEdit1.TabIndex = 29;
+            // 
+            // myKodTextEdit1
+            // 
+            this.myKodTextEdit1.EnterMoveNextControl = true;
+            this.myKodTextEdit1.Location = new System.Drawing.Point(207, 245);
+            this.myKodTextEdit1.MenuManager = this.ribbonControl;
+            this.myKodTextEdit1.Name = "myKodTextEdit1";
+            this.myKodTextEdit1.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.myKodTextEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.myKodTextEdit1.Properties.Appearance.Options.UseTextOptions = true;
+            this.myKodTextEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.myKodTextEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myKodTextEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myKodTextEdit1.Properties.MaxLength = 20;
+            this.myKodTextEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myKodTextEdit1.StatusBarDescription = "Kod giriniz.";
+            this.myKodTextEdit1.TabIndex = 32;
             // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myKodTextEdit1);
+            this.Controls.Add(this.myIbanTextEdit1);
             this.Controls.Add(this.myFilterControl1);
             this.Controls.Add(this.myCheckEdit1);
             this.Controls.Add(this.myDateEdit1);
@@ -453,6 +492,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myDateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCheckEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myIbanTextEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myKodTextEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -483,5 +524,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private UserControls.Controls.MyDateEdit myDateEdit1;
         private UserControls.Controls.MyCheckEdit myCheckEdit1;
         private UserControls.Controls.MyFilterControl myFilterControl1;
+        private UserControls.Controls.MyIbanTextEdit myIbanTextEdit1;
+        private UserControls.Controls.MyKodTextEdit myKodTextEdit1;
     }
 }

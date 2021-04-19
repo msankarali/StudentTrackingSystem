@@ -13,6 +13,5 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
             Properties.Mask.AutoComplete = AutoCompleteType.None;
             StatusBarDescription = "IBAN No giriniz.";
         }
-        public override bool EnterMoveNextControl { get; set; }
     }
 }
