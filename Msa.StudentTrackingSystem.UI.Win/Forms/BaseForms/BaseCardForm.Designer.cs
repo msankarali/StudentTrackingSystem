@@ -54,6 +54,19 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem5 = new DevExpress.Utils.ToolTipSeparatorItem();
             DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition8 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition9 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition10 = new DevExpress.XtraLayout.RowDefinition();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnNew = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -85,6 +98,11 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.mySpinEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MySpinEdit();
             this.myTCKimlikNoEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyTCKimlikNoEdit();
             this.myTelephoneNoTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyTelephoneNoTextEdit();
+            this.myToggleSwitch1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyToggleSwitch();
+            this.myDataLayoutControl1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyDataLayoutControl();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.myButtonEdit2 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyButtonEdit();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
@@ -102,6 +120,12 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.mySpinEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTCKimlikNoEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTelephoneNoTextEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myToggleSwitch1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).BeginInit();
+            this.myDataLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -132,7 +156,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.ribbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
             this.ribbonControl.ShowQatLocationSelector = false;
             this.ribbonControl.ShowToolbarCustomizeItem = false;
-            this.ribbonControl.Size = new System.Drawing.Size(929, 109);
+            this.ribbonControl.Size = new System.Drawing.Size(1043, 109);
             this.ribbonControl.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
@@ -280,10 +304,10 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.ribbonStatusBar1.ItemLinks.Add(this.statusBarDescription);
             this.ribbonStatusBar1.ItemLinks.Add(this.statusBarShortcut);
             this.ribbonStatusBar1.ItemLinks.Add(this.statusBarShortcutDescription);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 506);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 690);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(929, 24);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1043, 24);
             // 
             // ribbonPage2
             // 
@@ -415,6 +439,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             // 
             // myCheckEdit1
             // 
+            this.myCheckEdit1.EnterMoveNextControl = true;
             this.myCheckEdit1.Location = new System.Drawing.Point(34, 297);
             this.myCheckEdit1.MenuManager = this.ribbonControl;
             this.myCheckEdit1.Name = "myCheckEdit1";
@@ -571,11 +596,122 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myTelephoneNoTextEdit1.StatusBarDescription = "Telefon No giriniz.";
             this.myTelephoneNoTextEdit1.TabIndex = 50;
             // 
+            // myToggleSwitch1
+            // 
+            this.myToggleSwitch1.EnterMoveNextControl = true;
+            this.myToggleSwitch1.Location = new System.Drawing.Point(207, 272);
+            this.myToggleSwitch1.MenuManager = this.ribbonControl;
+            this.myToggleSwitch1.Name = "myToggleSwitch1";
+            this.myToggleSwitch1.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.myToggleSwitch1.Properties.Appearance.Options.UseForeColor = true;
+            this.myToggleSwitch1.Properties.AutoHeight = false;
+            this.myToggleSwitch1.Properties.AutoWidth = true;
+            this.myToggleSwitch1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.myToggleSwitch1.Properties.OffText = "Pasif";
+            this.myToggleSwitch1.Properties.OnText = "Aktif";
+            this.myToggleSwitch1.Size = new System.Drawing.Size(77, 18);
+            this.myToggleSwitch1.StatusBarDescription = "Kartın kullanım durumunu seçiniz.";
+            this.myToggleSwitch1.TabIndex = 53;
+            // 
+            // myDataLayoutControl1
+            // 
+            this.myDataLayoutControl1.Controls.Add(this.myButtonEdit2);
+            this.myDataLayoutControl1.Location = new System.Drawing.Point(34, 323);
+            this.myDataLayoutControl1.Name = "myDataLayoutControl1";
+            this.myDataLayoutControl1.OptionsFocus.EnableAutoTabOrder = false;
+            this.myDataLayoutControl1.Root = this.Root;
+            this.myDataLayoutControl1.Size = new System.Drawing.Size(944, 285);
+            this.myDataLayoutControl1.TabIndex = 56;
+            this.myDataLayoutControl1.Text = "myDataLayoutControl1";
+            // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1});
+            this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
+            this.Root.Name = "Root";
+            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1.Width = 200D;
+            columnDefinition2.SizeType = System.Windows.Forms.SizeType.Percent;
+            columnDefinition2.Width = 100D;
+            columnDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition3.Width = 90D;
+            this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
+            columnDefinition1,
+            columnDefinition2,
+            columnDefinition3});
+            rowDefinition1.Height = 24D;
+            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition2.Height = 24D;
+            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition3.Height = 24D;
+            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition4.Height = 24D;
+            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition5.Height = 24D;
+            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition6.Height = 24D;
+            rowDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition7.Height = 24D;
+            rowDefinition7.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition8.Height = 24D;
+            rowDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition9.Height = 24D;
+            rowDefinition9.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition10.Height = 100D;
+            rowDefinition10.SizeType = System.Windows.Forms.SizeType.Percent;
+            this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
+            rowDefinition1,
+            rowDefinition2,
+            rowDefinition3,
+            rowDefinition4,
+            rowDefinition5,
+            rowDefinition6,
+            rowDefinition7,
+            rowDefinition8,
+            rowDefinition9,
+            rowDefinition10});
+            this.Root.Size = new System.Drawing.Size(944, 285);
+            this.Root.TextVisible = false;
+            // 
+            // myButtonEdit2
+            // 
+            this.myButtonEdit2.EnterMoveNextControl = true;
+            this.myButtonEdit2.Id = null;
+            this.myButtonEdit2.Location = new System.Drawing.Point(117, 12);
+            this.myButtonEdit2.MenuManager = this.ribbonControl;
+            this.myButtonEdit2.Name = "myButtonEdit2";
+            this.myButtonEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myButtonEdit2.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myButtonEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.myButtonEdit2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.myButtonEdit2.Size = new System.Drawing.Size(91, 20);
+            this.myButtonEdit2.StatusBarDescription = null;
+            this.myButtonEdit2.StatusBarShortcut = "F4 :";
+            this.myButtonEdit2.StatusBarShortcutDescription = null;
+            this.myButtonEdit2.StyleController = this.myDataLayoutControl1;
+            this.myButtonEdit2.TabIndex = 4;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem1.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem1.Control = this.myButtonEdit2;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(200, 24);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(93, 13);
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 530);
+            this.ClientSize = new System.Drawing.Size(1043, 714);
+            this.Controls.Add(this.myDataLayoutControl1);
+            this.Controls.Add(this.myToggleSwitch1);
             this.Controls.Add(this.myTelephoneNoTextEdit1);
             this.Controls.Add(this.myTCKimlikNoEdit1);
             this.Controls.Add(this.mySpinEdit1);
@@ -618,6 +754,12 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.mySpinEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTCKimlikNoEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTelephoneNoTextEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myToggleSwitch1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).EndInit();
+            this.myDataLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -656,5 +798,10 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private UserControls.Controls.MySpinEdit mySpinEdit1;
         private UserControls.Controls.MyTCKimlikNoEdit myTCKimlikNoEdit1;
         private UserControls.Controls.MyTelephoneNoTextEdit myTelephoneNoTextEdit1;
+        private UserControls.Controls.MyToggleSwitch myToggleSwitch1;
+        private UserControls.Controls.MyDataLayoutControl myDataLayoutControl1;
+        private DevExpress.XtraLayout.LayoutControlGroup Root;
+        private UserControls.Controls.MyButtonEdit myButtonEdit2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
 }
