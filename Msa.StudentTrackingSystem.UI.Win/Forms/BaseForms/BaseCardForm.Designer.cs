@@ -73,12 +73,14 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myCalcEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCalcEdit();
             this.myCardEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCardEdit();
             this.myComboBoxEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyComboBoxEdit();
+            this.myCheckedComboBoxEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyCheckedComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTextEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCalcEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCardEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myComboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myCheckedComboBoxEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -351,11 +353,28 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myComboBoxEdit1.StatusBarShortcutDescription = null;
             this.myComboBoxEdit1.TabIndex = 14;
             // 
+            // myCheckedComboBoxEdit1
+            // 
+            this.myCheckedComboBoxEdit1.EnterMoveNextControl = true;
+            this.myCheckedComboBoxEdit1.Location = new System.Drawing.Point(34, 245);
+            this.myCheckedComboBoxEdit1.MenuManager = this.ribbonControl;
+            this.myCheckedComboBoxEdit1.Name = "myCheckedComboBoxEdit1";
+            this.myCheckedComboBoxEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myCheckedComboBoxEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myCheckedComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.myCheckedComboBoxEdit1.Size = new System.Drawing.Size(167, 20);
+            this.myCheckedComboBoxEdit1.StatusBarDescription = null;
+            this.myCheckedComboBoxEdit1.StatusBarShortcut = "F4: ";
+            this.myCheckedComboBoxEdit1.StatusBarShortcutDescription = null;
+            this.myCheckedComboBoxEdit1.TabIndex = 17;
+            // 
             // BaseCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 530);
+            this.Controls.Add(this.myCheckedComboBoxEdit1);
             this.Controls.Add(this.myComboBoxEdit1);
             this.Controls.Add(this.myCardEdit1);
             this.Controls.Add(this.myCalcEdit1);
@@ -375,6 +394,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myCalcEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCardEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myComboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myCheckedComboBoxEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,5 +421,6 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private UserControls.Controls.MyCalcEdit myCalcEdit1;
         private UserControls.Controls.MyCardEdit myCardEdit1;
         private UserControls.Controls.MyComboBoxEdit myComboBoxEdit1;
+        private UserControls.Controls.MyCheckedComboBoxEdit myCheckedComboBoxEdit1;
     }
 }
