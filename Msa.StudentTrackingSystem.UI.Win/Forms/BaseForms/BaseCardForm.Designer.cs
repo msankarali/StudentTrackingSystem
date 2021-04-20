@@ -100,8 +100,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myTelephoneNoTextEdit1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyTelephoneNoTextEdit();
             this.myToggleSwitch1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyToggleSwitch();
             this.myDataLayoutControl1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyDataLayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.myButtonEdit2 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Controls.MyButtonEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit1.Properties)).BeginInit();
@@ -123,8 +123,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myToggleSwitch1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).BeginInit();
             this.myDataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -624,6 +624,25 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myDataLayoutControl1.TabIndex = 56;
             this.myDataLayoutControl1.Text = "myDataLayoutControl1";
             // 
+            // myButtonEdit2
+            // 
+            this.myButtonEdit2.EnterMoveNextControl = true;
+            this.myButtonEdit2.Id = null;
+            this.myButtonEdit2.Location = new System.Drawing.Point(108, 12);
+            this.myButtonEdit2.MenuManager = this.ribbonControl;
+            this.myButtonEdit2.Name = "myButtonEdit2";
+            this.myButtonEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myButtonEdit2.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myButtonEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.myButtonEdit2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.myButtonEdit2.Size = new System.Drawing.Size(100, 20);
+            this.myButtonEdit2.StatusBarDescription = null;
+            this.myButtonEdit2.StatusBarShortcut = "F4 :";
+            this.myButtonEdit2.StatusBarShortcutDescription = null;
+            this.myButtonEdit2.StyleController = this.myDataLayoutControl1;
+            this.myButtonEdit2.TabIndex = 4;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -675,25 +694,6 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             rowDefinition10});
             this.Root.Size = new System.Drawing.Size(944, 285);
             this.Root.TextVisible = false;
-            // 
-            // myButtonEdit2
-            // 
-            this.myButtonEdit2.EnterMoveNextControl = true;
-            this.myButtonEdit2.Id = null;
-            this.myButtonEdit2.Location = new System.Drawing.Point(117, 12);
-            this.myButtonEdit2.MenuManager = this.ribbonControl;
-            this.myButtonEdit2.Name = "myButtonEdit2";
-            this.myButtonEdit2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.myButtonEdit2.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.myButtonEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.myButtonEdit2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.myButtonEdit2.Size = new System.Drawing.Size(91, 20);
-            this.myButtonEdit2.StatusBarDescription = null;
-            this.myButtonEdit2.StatusBarShortcut = "F4 :";
-            this.myButtonEdit2.StatusBarShortcutDescription = null;
-            this.myButtonEdit2.StyleController = this.myDataLayoutControl1;
-            this.myButtonEdit2.TabIndex = 4;
             // 
             // layoutControlItem1
             // 
@@ -757,8 +757,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             ((System.ComponentModel.ISupportInitialize)(this.myToggleSwitch1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).EndInit();
             this.myDataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myButtonEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

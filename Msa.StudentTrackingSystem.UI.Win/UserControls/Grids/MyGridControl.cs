@@ -64,13 +64,11 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
 
             return view;
         }
-
         protected override void RegisterAvailableViewsCore(InfoCollection collection)
         {
             base.RegisterAvailableViewsCore(collection);
             collection.Add(new MyGridInfoRegistrator());
         }
-
         private class MyGridInfoRegistrator : GridInfoRegistrator
         {
             public override string ViewName => "MyGridView";
@@ -100,12 +98,10 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
                 ((RepositoryItemDateEdit)column.ColumnEdit).Mask.MaskType = MaskType.DateTimeAdvancingCaret;
             }
         }
-
         protected override GridColumnCollection CreateColumnCollection()
         {
             return new MyGridColumnCollection(this);
         }
-
         private class MyGridColumnCollection : GridColumnCollection
         {
             public MyGridColumnCollection(ColumnView view) : base(view) { }
