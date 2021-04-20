@@ -39,6 +39,10 @@
     <Reference Include="DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DevExpress\Bin\Framework\DevExpress.XtraGrid.v20.1.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>E:\DevExpress\Bin\Framework\DevExpress.XtraLayout.v20.1.dll</HintPath>
@@ -130,6 +134,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UserControls\Controls\MyToggleSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Grids\MyGridControl.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UserControls\Navigators\InsUptNavigator.cs">

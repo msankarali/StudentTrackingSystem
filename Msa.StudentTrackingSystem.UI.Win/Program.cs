@@ -17,7 +17,7 @@ namespace Msa.StudentTrackingSystem.UI.Win
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BaseCardsForm());
+            Application.Run(new BaseCardForm());
         }
     }
 }
