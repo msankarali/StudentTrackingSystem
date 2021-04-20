@@ -620,7 +620,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.myDataLayoutControl1.Name = "myDataLayoutControl1";
             this.myDataLayoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl1.Root = this.Root;
-            this.myDataLayoutControl1.Size = new System.Drawing.Size(944, 285);
+            this.myDataLayoutControl1.Size = new System.Drawing.Size(944, 117);
             this.myDataLayoutControl1.TabIndex = 56;
             this.myDataLayoutControl1.Text = "myDataLayoutControl1";
             // 
@@ -692,7 +692,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             rowDefinition8,
             rowDefinition9,
             rowDefinition10});
-            this.Root.Size = new System.Drawing.Size(944, 285);
+            this.Root.Size = new System.Drawing.Size(927, 237);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1

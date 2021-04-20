@@ -65,6 +65,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
                 {
                     Caption = "Kod",
                     FieldName = "Kod",
+                    Visible = true,
                     OptionsColumn =
                     {
                         AllowEdit = false
@@ -129,7 +130,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
             return new MyGridColumnCollection(this);
         }
 
-        private class MyGridColumnCollection : GridColumnCollection
+        private class MyGridColumnCollection : BandedGridColumnCollection
         {
             public MyGridColumnCollection(ColumnView view) : base(view) { }
             protected override GridColumn CreateColumn()
