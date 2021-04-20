@@ -5,8 +5,8 @@ using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Registrator;
+using DevExpress.XtraGrid.Views.BandedGrid;
 using DevExpress.XtraGrid.Views.Base;
-using DevExpress.XtraGrid.Views.Grid;
 using Msa.StudentTrackingSystem.UI.Win.Interfaces;
 using System.ComponentModel;
 using System.Drawing;
@@ -14,14 +14,21 @@ using System.Drawing;
 namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
 {
     [ToolboxItem(true)]
-    public class MyGridControl : GridControl
+    public class MyBandedGridControl : GridControl
     {
         protected override BaseView CreateDefaultView()
         {
-            var view = (GridView)CreateView("MyGridView");
+            var view = (MyBandedGridView)CreateView("MyBandedGridView");
+
+            view.Appearance.BandPanel.ForeColor = Color.DarkBlue;
+            view.Appearance.BandPanel.Font = new Font(new FontFamily("Tahoma"), 8.25f, FontStyle.Bold);
+            view.Appearance.BandPanel.TextOptions.HAlignment = HorzAlignment.Center;
+            view.BandPanelRowHeight = 40;
+
             view.Appearance.ViewCaption.ForeColor = Color.Maroon;
             view.Appearance.HeaderPanel.ForeColor = Color.Maroon;
             view.Appearance.HeaderPanel.TextOptions.HAlignment = HorzAlignment.Center;
+
             view.Appearance.FooterPanel.ForeColor = Color.Maroon;
             view.Appearance.FooterPanel.Font = new Font(new FontFamily("Tahoma"), 8.25f, FontStyle.Bold);
 
@@ -29,57 +36,71 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
             view.OptionsMenu.EnableFooterMenu = false;
             view.OptionsMenu.EnableGroupPanelMenu = false;
 
-            view.OptionsNavigation.AutoMoveRowFocus = true;
+            view.OptionsNavigation.EnterMoveNextColumn = true;
 
             view.OptionsPrint.AutoWidth = false;
             view.OptionsPrint.PrintFooter = false;
             view.OptionsPrint.PrintGroupFooter = false;
 
-            view.OptionsView.ShowViewCaption = true;
             view.OptionsView.ShowAutoFilterRow = true;
+            view.OptionsView.ShowViewCaption = true;
             view.OptionsView.ShowGroupPanel = false;
             view.OptionsView.ColumnAutoWidth = false;
             view.OptionsView.RowAutoHeight = true;
             view.OptionsView.HeaderFilterButtonShowMode = FilterButtonShowMode.Button;
 
-            var idColumn = new MyGridColumn
+            var columns = new[]
             {
-                Caption = "Id",
-                FieldName = "Id"
+                new BandedGridColumn
+                {
+                    Caption = "Id",
+                    FieldName = "Id",
+                    OptionsColumn =
+                    {
+                        AllowEdit = false,
+                        ShowInCustomizationForm = false
+                    }
+                },
+                new BandedGridColumn
+                {
+                    Caption = "Kod",
+                    FieldName = "Kod",
+                    OptionsColumn =
+                    {
+                        AllowEdit = false
+                    },
+                    AppearanceCell =
+                    {
+                        TextOptions =
+                        {
+                            HAlignment = HorzAlignment.Center
+                        },
+                        Options =
+                        {
+                            UseTextOptions = true
+                        }
+                    }
+                }
             };
-            idColumn.OptionsColumn.AllowEdit = false;
-            idColumn.OptionsColumn.ShowInCustomizationForm = false;
-            view.Columns.Add(idColumn);
 
-            var kodColumn = new MyGridColumn
-            {
-                Caption = "Kod",
-                FieldName = "Kod"
-            };
-            kodColumn.OptionsColumn.AllowEdit = false;
-            kodColumn.Visible = true;
-            kodColumn.AppearanceCell.TextOptions.HAlignment = HorzAlignment.Center;
-            kodColumn.AppearanceCell.Options.UseTextOptions = true;
-            view.Columns.Add(kodColumn);
-
+            view.Columns.AddRange(columns);
             return view;
         }
 
         protected override void RegisterAvailableViewsCore(InfoCollection collection)
         {
             base.RegisterAvailableViewsCore(collection);
-            collection.Add(new MyGridInfoRegistrator());
+            collection.Add(new MyBandedGridInfoRegistrator());
         }
 
-        private class MyGridInfoRegistrator : GridInfoRegistrator
+        private class MyBandedGridInfoRegistrator : BandedGridInfoRegistrator
         {
-            public override string ViewName => "MyGridView";
-            public override BaseView CreateView(GridControl grid) => new MyGridView(grid);
-            //overridebles
+            public override string ViewName => "MyBandedGridView";
+            public override BaseView CreateView(GridControl grid) => new MyBandedGridView(grid);
         }
     }
 
-    public class MyGridView : GridView, IStatusBarShortcut
+    public class MyBandedGridView : BandedGridView, IStatusBarShortcut
     {
         #region Properties
         public string StatusBarShortcut { get; set; }
@@ -87,9 +108,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
         public string StatusBarDescription { get; set; }
         #endregion
 
-        public MyGridView() { }
+        public MyBandedGridView() { }
 
-        public MyGridView(GridControl ownerGrid) : base(ownerGrid) { }
+        public MyBandedGridView(GridControl ownerGrid) : base(ownerGrid) { }
 
         protected override void OnColumnChangedCore(GridColumn column)
         {
@@ -111,10 +132,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
         private class MyGridColumnCollection : GridColumnCollection
         {
             public MyGridColumnCollection(ColumnView view) : base(view) { }
-
             protected override GridColumn CreateColumn()
             {
-                var column = new MyGridColumn();
+                var column = new MyBandedGridColumn();
                 column.OptionsColumn.AllowEdit = false;
 
                 return column;
@@ -122,7 +142,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
         }
     }
 
-    public class MyGridColumn : GridColumn, IStatusBarShortcut
+    public class MyBandedGridColumn : BandedGridColumn, IStatusBarShortcut
     {
         #region Properties
         public string StatusBarShortcut { get; set; }
