@@ -1,4 +1,5 @@
 using Msa.StudentTrackingSystem.Data.StudentTrackingSystemMigration;
+using Msa.StudentTrackingSystem.Model.Entities;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
@@ -22,5 +23,9 @@ namespace Msa.StudentTrackingSystem.Data.Contexts
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
         }
+
+        public DbSet<Il> Il { get; set; }
+        public DbSet<Ilce> Ilce { get; set; }
+        public DbSet<Okul> Okul { get; set; }
     }
 }
