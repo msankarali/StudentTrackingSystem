@@ -1,8 +1,10 @@
 ﻿using Msa.Dal.Interfaces;
+using Msa.StudentTrackingSystem.Bll.Functions;
 using Msa.StudentTrackingSystem.Bll.Interfaces;
 using Msa.StudentTrackingSystem.Model.Entities.Base;
 using System;
 using System.Data.Entity;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Windows.Forms;
 
@@ -24,8 +26,21 @@ namespace Msa.StudentTrackingSystem.Bll.Base
 
         protected TResult BaseSingle<TResult>(Expression<Func<T, bool>> filter, Expression<Func<T, TResult>> selector)
         {
-
+            GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
             return _uow.Rep.Find(filter, selector);
+        }
+
+        protected IQueryable<TResult> BaseList<TResult>(Expression<Func<T, bool>> filter, Expression<Func<T, TResult>> selector)
+        {
+            GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
+            return _uow.Rep.Select(filter, selector);
+        }
+
+        protected bool BaseInsert(BaseEntity entity, Expression<Func<T, bool>> filter)
+        {
+            GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
+            //Validation
+            _uow.Rep.Insert(entity);
         }
 
         #region Dispose
