@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
 {
-    public partial class OkulKartlari : DevExpress.XtraEditors.XtraForm
+    public partial class OkulKartlari : BaseCardsForm
     {
         public OkulKartlari()
         {
