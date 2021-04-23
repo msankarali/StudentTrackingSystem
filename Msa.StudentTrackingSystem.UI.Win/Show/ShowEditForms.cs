@@ -14,14 +14,14 @@ namespace Msa.StudentTrackingSystem.UI.Win.Show
 
             using (var form = (TForm)Activator.CreateInstance(typeof(TForm)))
             {
-                form.formOperationType =
+                form.FormOperationType =
                     id > 0
                     ? FormOperationType.EntityUpdate
                     : FormOperationType.EntityInsert;
-                form.id = id;
-                form.Load();
+                form.Id = id;
+                form.LoadForm();
                 form.ShowDialog();
-                return form.refreshRequired ? form.id : 0;
+                return form.RefreshRequired ? form.Id : 0;
             }
         }
     }

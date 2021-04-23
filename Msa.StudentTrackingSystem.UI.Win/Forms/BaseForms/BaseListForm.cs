@@ -40,7 +40,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             //Form events
         }
 
-        protected internal void Load()
+        protected internal void LoadForm()
         {
             FillVariables();
             EventsLoad();
@@ -55,10 +55,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             //TODO: will be updated
         }
 
-        private void FillVariables()
-        {
-            throw new System.NotImplementedException();
-        }
+        protected virtual void FillVariables() { }
 
         private void ShowEditForm(long id)
         {
@@ -83,10 +80,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             Close();
         }
 
-        private void RefreshList()
-        {
-            throw new System.NotImplementedException();
-        }
+        protected virtual void RefreshList() { }
 
         private void ApplyFilter()
         {

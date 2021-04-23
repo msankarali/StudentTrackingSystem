@@ -30,67 +30,81 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
         private void InitializeComponent()
         {
             this.grid = new Msa.StudentTrackingSystem.UI.Win.UserControls.Grids.MyGridControl();
-            this.tablo = new Msa.StudentTrackingSystem.UI.Win.UserControls.Grids.MyGridView();
+            this.table = new Msa.StudentTrackingSystem.UI.Win.UserControls.Grids.MyGridView();
             this.colId = new Msa.StudentTrackingSystem.UI.Win.UserControls.Grids.MyGridColumn();
             this.colKod = new Msa.StudentTrackingSystem.UI.Win.UserControls.Grids.MyGridColumn();
-            this.longNavigator1 = new Msa.StudentTrackingSystem.UI.Win.UserControls.Navigators.LongNavigator();
             this.colOkulAdi = new Msa.StudentTrackingSystem.UI.Win.UserControls.Grids.MyGridColumn();
             this.colIlAdi = new Msa.StudentTrackingSystem.UI.Win.UserControls.Grids.MyGridColumn();
             this.colIlceAdi = new Msa.StudentTrackingSystem.UI.Win.UserControls.Grids.MyGridColumn();
             this.colAciklama = new Msa.StudentTrackingSystem.UI.Win.UserControls.Grids.MyGridColumn();
+            this.longNavigator = new Msa.StudentTrackingSystem.UI.Win.UserControls.Navigators.LongNavigator();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ribbonControl
+            // 
+            this.ribbonControl.ExpandCollapseItem.Id = 0;
+            // 
+            // 
+            // 
+            this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.Id = -5000;
+            this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.ribbonControl.Size = new System.Drawing.Size(1242, 109);
+            this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // grid
             // 
             this.grid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grid.Location = new System.Drawing.Point(0, 109);
-            this.grid.MainView = this.tablo;
+            this.grid.MainView = this.table;
             this.grid.MenuManager = this.ribbonControl;
             this.grid.Name = "grid";
             this.grid.Size = new System.Drawing.Size(1242, 449);
             this.grid.TabIndex = 2;
             this.grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.tablo});
+            this.table});
             // 
-            // tablo
+            // table
             // 
-            this.tablo.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.tablo.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.tablo.Appearance.FooterPanel.Options.UseFont = true;
-            this.tablo.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.tablo.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.tablo.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.tablo.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.tablo.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.tablo.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.tablo.Appearance.ViewCaption.Options.UseForeColor = true;
-            this.tablo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.table.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.table.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.table.Appearance.FooterPanel.Options.UseFont = true;
+            this.table.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.table.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.table.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.table.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.table.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.table.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.table.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.table.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colId,
             this.colKod,
             this.colOkulAdi,
             this.colIlAdi,
             this.colIlceAdi,
             this.colAciklama});
-            this.tablo.GridControl = this.grid;
-            this.tablo.Name = "tablo";
-            this.tablo.OptionsMenu.EnableColumnMenu = false;
-            this.tablo.OptionsMenu.EnableFooterMenu = false;
-            this.tablo.OptionsMenu.EnableGroupPanelMenu = false;
-            this.tablo.OptionsPrint.AutoWidth = false;
-            this.tablo.OptionsPrint.PrintFooter = false;
-            this.tablo.OptionsPrint.PrintGroupFooter = false;
-            this.tablo.OptionsView.ColumnAutoWidth = false;
-            this.tablo.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
-            this.tablo.OptionsView.RowAutoHeight = true;
-            this.tablo.OptionsView.ShowAutoFilterRow = true;
-            this.tablo.OptionsView.ShowGroupPanel = false;
-            this.tablo.OptionsView.ShowViewCaption = true;
-            this.tablo.StatusBarDescription = null;
-            this.tablo.StatusBarShortcut = null;
-            this.tablo.StatusBarShortcutDescription = null;
-            this.tablo.ViewCaption = "Okul Kartları";
+            this.table.GridControl = this.grid;
+            this.table.Name = "table";
+            this.table.OptionsMenu.EnableColumnMenu = false;
+            this.table.OptionsMenu.EnableFooterMenu = false;
+            this.table.OptionsMenu.EnableGroupPanelMenu = false;
+            this.table.OptionsPrint.AutoWidth = false;
+            this.table.OptionsPrint.PrintFooter = false;
+            this.table.OptionsPrint.PrintGroupFooter = false;
+            this.table.OptionsView.ColumnAutoWidth = false;
+            this.table.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.table.OptionsView.RowAutoHeight = true;
+            this.table.OptionsView.ShowAutoFilterRow = true;
+            this.table.OptionsView.ShowGroupPanel = false;
+            this.table.OptionsView.ShowViewCaption = true;
+            this.table.StatusBarDescription = null;
+            this.table.StatusBarShortcut = null;
+            this.table.StatusBarShortcutDescription = null;
+            this.table.ViewCaption = "Okul Kartları";
             // 
             // colId
             // 
@@ -117,14 +131,6 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.colKod.Visible = true;
             this.colKod.VisibleIndex = 0;
             this.colKod.Width = 130;
-            // 
-            // longNavigator1
-            // 
-            this.longNavigator1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.longNavigator1.Location = new System.Drawing.Point(0, 558);
-            this.longNavigator1.Name = "longNavigator1";
-            this.longNavigator1.Size = new System.Drawing.Size(1242, 24);
-            this.longNavigator1.TabIndex = 3;
             // 
             // colOkulAdi
             // 
@@ -178,20 +184,30 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.colAciklama.VisibleIndex = 4;
             this.colAciklama.Width = 450;
             // 
-            // OkulKartlari
+            // longNavigator
+            // 
+            this.longNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.longNavigator.Location = new System.Drawing.Point(0, 558);
+            this.longNavigator.Name = "longNavigator";
+            this.longNavigator.Size = new System.Drawing.Size(1242, 24);
+            this.longNavigator.TabIndex = 3;
+            // 
+            // OkulListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1242, 606);
             this.Controls.Add(this.grid);
-            this.Controls.Add(this.longNavigator1);
+            this.Controls.Add(this.longNavigator);
             this.IconOptions.ShowIcon = false;
-            this.Name = "OkulKartlari";
+            this.Name = "OkulListForm";
             this.Text = "Okul Kartları";
-            this.Controls.SetChildIndex(this.longNavigator1, 0);
+            this.Controls.SetChildIndex(this.ribbonControl, 0);
+            this.Controls.SetChildIndex(this.longNavigator, 0);
             this.Controls.SetChildIndex(this.grid, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,10 +216,10 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
         #endregion
 
         private UserControls.Grids.MyGridControl grid;
-        private UserControls.Grids.MyGridView tablo;
+        private UserControls.Grids.MyGridView table;
         private UserControls.Grids.MyGridColumn colId;
         private UserControls.Grids.MyGridColumn colKod;
-        private UserControls.Navigators.LongNavigator longNavigator1;
+        private UserControls.Navigators.LongNavigator longNavigator;
         private UserControls.Grids.MyGridColumn colOkulAdi;
         private UserControls.Grids.MyGridColumn colIlAdi;
         private UserControls.Grids.MyGridColumn colIlceAdi;
