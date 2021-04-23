@@ -8,9 +8,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
         public OkulListForm()
         {
             InitializeComponent();
-
-            OkulBll bll = new OkulBll();
-            grid.DataSource = bll.List(null);
+            Bll = new OkulBll();
         }
     }
 }

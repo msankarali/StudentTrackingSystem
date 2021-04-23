@@ -19,5 +19,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Functions
             return -1;
 
         }
+
+        public static T GetRow<T>(this GridView table, bool withMessage = true)
+        {
+            if (table.FocusedRowHandle > -1)
+                return (T)table.GetRow(table.FocusedRowHandle);
+
+            if (withMessage)
+                Messages.ValidRowNotSelectedMessage();
+
+            return default(T);
+        }
     }
 }

@@ -1,7 +1,10 @@
 ﻿using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
+using Msa.StudentTrackingSystem.Bll.Interfaces;
 using Msa.StudentTrackingSystem.Common.Enums;
+using Msa.StudentTrackingSystem.Model.Entities.Base;
 using Msa.StudentTrackingSystem.UI.Win.Functions;
 using Msa.StudentTrackingSystem.UI.Win.Show.Interfaces;
 using System.Windows.Forms;
@@ -14,11 +17,14 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         protected CardType CardType;
         protected internal GridView Table;
         protected bool ShowActiveCards = true;
+        protected internal bool IsMultiSelect;
+        protected internal BaseEntity SelectedEntity;
+        protected IBaseBll Bll;
+        protected ControlNavigator Navigator;
 
         public BaseListForm()
         {
             InitializeComponent();
-            EventsLoad();
         }
 
         private void EventsLoad()
@@ -28,10 +34,31 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
                 button.ItemClick += Button_ItemClick;
 
             //Table events
+            Table.DoubleClick += Table_DoubleClick;
+            Table.KeyDown += Table_KeyDown;
 
             //Form events
         }
 
+        protected internal void Load()
+        {
+            FillVariables();
+            EventsLoad();
+
+            Table.OptionsSelection.MultiSelect = IsMultiSelect;
+            Navigator.NavigatableControl = Table.GridControl;
+
+            Cursor.Current = Cursors.WaitCursor;
+            RefreshList();
+            Cursor.Current = DefaultCursor;
+
+            //TODO: will be updated
+        }
+
+        private void FillVariables()
+        {
+            throw new System.NotImplementedException();
+        }
 
         private void ShowEditForm(long id)
         {
@@ -45,7 +72,15 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 
         private void SelectEntity()
         {
-            throw new System.NotImplementedException();
+            if (IsMultiSelect)
+            {
+                //TODO: will be updated
+            }
+            else
+                SelectedEntity = Table.GetRow<BaseEntity>();
+
+            DialogResult = DialogResult.OK;
+            Close();
         }
 
         private void RefreshList()
@@ -66,6 +101,18 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private void SetFormCaption()
         {
             throw new System.NotImplementedException();
+        }
+
+        private void ChooseOperationType()
+        {
+            if (!IsMdiChild)
+            {
+                //TODO: will be updated
+                SelectEntity();
+            }
+            else
+                btnEdit.PerformClick();
+
         }
 
         private void Button_ItemClick(object sender, ItemClickEventArgs e)
@@ -155,5 +202,26 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             Cursor.Current = DefaultCursor;
         }
 
+        private void Table_DoubleClick(object sender, System.EventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+
+            ChooseOperationType();
+
+            Cursor.Current = DefaultCursor;
+        }
+
+        private void Table_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Enter:
+                    ChooseOperationType();
+                    break;
+                case Keys.Escape:
+                    Close();
+                    break;
+            }
+        }
     }
 }
