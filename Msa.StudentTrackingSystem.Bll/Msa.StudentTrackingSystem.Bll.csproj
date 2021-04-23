@@ -64,6 +64,10 @@
       <Project>{C38047E8-8E2B-417D-9A0C-39D9835F2C48}</Project>
       <Name>Msa.Dal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Msa.StudentTrackingSystem.Common\Msa.StudentTrackingSystem.Common.csproj">
+      <Project>{D18840A1-4F2D-47D9-B723-0052855A54A7}</Project>
+      <Name>Msa.StudentTrackingSystem.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Msa.StudentTrackingSystem.Model\Msa.StudentTrackingSystem.Model.csproj">
       <Project>{B33AB442-5F11-4687-A360-528B79C6DA95}</Project>
       <Name>Msa.StudentTrackingSystem.Model</Name>

@@ -1,6 +1,8 @@
 ﻿using Msa.Dal.Interfaces;
 using Msa.StudentTrackingSystem.Bll.Functions;
 using Msa.StudentTrackingSystem.Bll.Interfaces;
+using Msa.StudentTrackingSystem.Common.Enums;
+using Msa.StudentTrackingSystem.Common.Message;
 using Msa.StudentTrackingSystem.Model.Entities.Base;
 using System;
 using System.Data.Entity;
@@ -40,7 +42,27 @@ namespace Msa.StudentTrackingSystem.Bll.Base
         {
             GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
             //Validation
-            _uow.Rep.Insert(entity);
+            _uow.Rep.Insert(entity.EntityConvert<T>());
+            return _uow.Save();
+        }
+
+        protected bool BaseUpdate(BaseEntity oldEntity, BaseEntity currentEntity, Expression<Func<T, bool>> filter)
+        {
+            GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
+            //Validation
+            var changedFields = oldEntity.GetChangedFields(currentEntity);
+            if (changedFields.Count == 0) return true;
+
+            _uow.Rep.Update(currentEntity.EntityConvert<T>(), changedFields);
+            return _uow.Save();
+        }
+
+        protected bool BaseDelete(BaseEntity entity, CardType cardType, bool mesajVer = true)
+        {
+            GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
+            if (mesajVer)
+                Messages.DeleteMessage(cardType);
+
         }
 
         #region Dispose
