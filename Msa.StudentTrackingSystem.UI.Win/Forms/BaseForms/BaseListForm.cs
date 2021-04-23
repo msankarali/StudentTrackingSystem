@@ -64,7 +64,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             }
             else if (e.Item == btnNew)
             {
-                //Auth controls
+                //TODO: Auth controls
+
                 ShowEditForm();
             }
         }

@@ -379,6 +379,10 @@
       <Project>{23C1E7D3-8570-47B5-BC3C-ED6C6DED9A19}</Project>
       <Name>Msa.StudentTrackingSystem.Bll</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Msa.StudentTrackingSystem.Common\Msa.StudentTrackingSystem.Common.csproj">
+      <Project>{D18840A1-4F2D-47D9-B723-0052855A54A7}</Project>
+      <Name>Msa.StudentTrackingSystem.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Msa.StudentTrackingSystem.Model\Msa.StudentTrackingSystem.Model.csproj">
       <Project>{B33AB442-5F11-4687-A360-528B79C6DA95}</Project>
       <Name>Msa.StudentTrackingSystem.Model</Name>
