@@ -1,4 +1,5 @@
 ﻿using Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms;
+using Msa.StudentTrackingSystem.UI.Win.GeneralForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Msa.StudentTrackingSystem.UI.Win
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BaseCardForm());
+            Application.Run(new MainForm());
         }
     }
 }

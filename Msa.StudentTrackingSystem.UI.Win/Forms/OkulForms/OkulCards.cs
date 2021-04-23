@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using Msa.StudentTrackingSystem.Bll.General;
 using Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms;
 using System;
 using System.Collections.Generic;
@@ -12,11 +13,14 @@ using System.Windows.Forms;
 
 namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
 {
-    public partial class OkulKartlari : BaseCardsForm
+    public partial class OkulCards : BaseCardsForm
     {
-        public OkulKartlari()
+        public OkulCards()
         {
             InitializeComponent();
+
+            OkulBll bll = new OkulBll();
+            grid.DataSource = bll.List(null);
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
 {
-    partial class OkulKartlari
+    partial class OkulCards
     {
         /// <summary>
         /// Required designer variable.

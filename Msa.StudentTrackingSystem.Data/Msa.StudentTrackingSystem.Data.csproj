@@ -56,13 +56,13 @@
     <Compile Include="StudentTrackingSystemMigration\Configuration.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Msa.StudentTrackingSystem.Model\Msa.StudentTrackingSystem.Model.csproj">
       <Project>{B33AB442-5F11-4687-A360-528B79C6DA95}</Project>
       <Name>Msa.StudentTrackingSystem.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

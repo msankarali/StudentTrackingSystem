@@ -1,9 +1,10 @@
 ﻿using Msa.StudentTrackingSystem.Model.Entities;
 using Msa.StudentTrackingSystem.Model.Entities.Base;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Msa.StudentTrackingSystem.Model.Dtos
 {
-    //Attribute
+    [NotMapped]
     public class OkulS : Okul
     {
         public string IlAdi { get; set; }

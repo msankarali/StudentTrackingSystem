@@ -8,14 +8,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace Msa.StudentTrackingSystem.Bll.General
 {
     public class OkulBll : BaseBll<Okul, StudentTrackingSystemContext>
     {
-        protected OkulBll() { }
+        public OkulBll() { }
 
-        protected OkulBll(Control ctrl) : base(ctrl) { }
+        public OkulBll(Control ctrl) : base(ctrl) { }
 
         public BaseEntity Single(Expression<Func<Okul, bool>> filter)
         {
@@ -43,7 +44,7 @@ namespace Msa.StudentTrackingSystem.Bll.General
                 IlceAdi = x.Ilce.IlceAdi,
                 Kod = x.Kod,
                 OkulAdi = x.OkulAdi
-            });
+            }).OrderBy(x => x.Kod).ToList();
         }
 
         public bool Insert(BaseEntity entity)

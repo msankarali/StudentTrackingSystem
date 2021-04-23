@@ -2,9 +2,9 @@
 
 namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
 {
-    public partial class OkulKarti : BaseCardForm
+    public partial class OkulCard : BaseCardForm
     {
-        public OkulKarti()
+        public OkulCard()
         {
             InitializeComponent();
         }
