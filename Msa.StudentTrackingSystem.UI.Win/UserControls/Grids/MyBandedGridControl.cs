@@ -97,6 +97,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
         private class MyBandedGridInfoRegistrator : BandedGridInfoRegistrator
         {
             public override string ViewName => "MyBandedGridView";
+
             public override BaseView CreateView(GridControl grid) => new MyBandedGridView(grid);
         }
     }
@@ -104,14 +105,20 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
     public class MyBandedGridView : BandedGridView, IStatusBarShortcut
     {
         #region Properties
+
         public string StatusBarShortcut { get; set; }
         public string StatusBarShortcutDescription { get; set; }
         public string StatusBarDescription { get; set; }
-        #endregion
 
-        public MyBandedGridView() { }
+        #endregion Properties
 
-        public MyBandedGridView(GridControl ownerGrid) : base(ownerGrid) { }
+        public MyBandedGridView()
+        {
+        }
+
+        public MyBandedGridView(GridControl ownerGrid) : base(ownerGrid)
+        {
+        }
 
         protected override void OnColumnChangedCore(GridColumn column)
         {
@@ -132,7 +139,10 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
 
         private class MyGridColumnCollection : BandedGridColumnCollection
         {
-            public MyGridColumnCollection(ColumnView view) : base(view) { }
+            public MyGridColumnCollection(ColumnView view) : base(view)
+            {
+            }
+
             protected override GridColumn CreateColumn()
             {
                 var column = new MyBandedGridColumn();
@@ -146,9 +156,11 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
     public class MyBandedGridColumn : BandedGridColumn, IStatusBarShortcut
     {
         #region Properties
+
         public string StatusBarShortcut { get; set; }
         public string StatusBarShortcutDescription { get; set; }
         public string StatusBarDescription { get; set; }
-        #endregion
+
+        #endregion Properties
     }
 }

@@ -1,13 +1,9 @@
 ﻿using Msa.Dal.Interfaces;
 using Msa.StudentTrackingSystem.Common.Message;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Msa.Dal.Base
 {
@@ -15,8 +11,10 @@ namespace Msa.Dal.Base
         where T : class
     {
         #region Variables
+
         private readonly DbContext _context;
-        #endregion
+
+        #endregion Variables
 
         public UnitOfWork(DbContext context)
         {
@@ -46,19 +44,24 @@ namespace Msa.Dal.Base
                     case 208:
                         Messages.ErrorMessage("İşlem yapmak istediğiniz tablo Veritabanında bulunamadı.");
                         break;
+
                     case 547:
                         Messages.ErrorMessage("Seçilen kartın işlem görmüş hareketli var. Kart silinemez.");
                         break;
+
                     case 2601:
                     case 2627:
                         Messages.ErrorMessage("Girmiş olduğunuz Id daha önce kullanılmıştır.");
                         break;
+
                     case 4060:
                         Messages.ErrorMessage("İşlem yapmak istediğiniz Veritabanı Sunucuda bulunamadı.");
                         break;
+
                     case 18456:
                         Messages.ErrorMessage("Sunucuya bağlanılmak istenilen kullanıcı adı veya parola hatalıdır.");
                         break;
+
                     default:
                         Messages.ErrorMessage(sqlEx.Message);
                         break;
@@ -76,7 +79,9 @@ namespace Msa.Dal.Base
         }
 
         #region Dispose
+
         private bool _disposedValue = false;
+
         protected virtual void Dispose(bool disposing)
         {
             if (!_disposedValue)
@@ -93,6 +98,7 @@ namespace Msa.Dal.Base
             Dispose(disposing: true);
             GC.SuppressFinalize(this);
         }
-        #endregion
+
+        #endregion Dispose
     }
 }

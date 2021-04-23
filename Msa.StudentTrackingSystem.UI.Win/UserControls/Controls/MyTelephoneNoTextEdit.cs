@@ -1,11 +1,6 @@
 ﻿using DevExpress.Utils;
 using DevExpress.XtraEditors.Mask;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
 {

@@ -74,7 +74,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
         private class MyGridInfoRegistrator : GridInfoRegistrator
         {
             public override string ViewName => "MyGridView";
+
             public override BaseView CreateView(GridControl grid) => new MyGridView(grid);
+
             //overridebles
         }
     }
@@ -82,14 +84,20 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
     public class MyGridView : GridView, IStatusBarShortcut
     {
         #region Properties
+
         public string StatusBarShortcut { get; set; }
         public string StatusBarShortcutDescription { get; set; }
         public string StatusBarDescription { get; set; }
-        #endregion
 
-        public MyGridView() { }
+        #endregion Properties
 
-        public MyGridView(GridControl ownerGrid) : base(ownerGrid) { }
+        public MyGridView()
+        {
+        }
+
+        public MyGridView(GridControl ownerGrid) : base(ownerGrid)
+        {
+        }
 
         protected override void OnColumnChangedCore(GridColumn column)
         {
@@ -110,7 +118,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
 
         private class MyGridColumnCollection : GridColumnCollection
         {
-            public MyGridColumnCollection(ColumnView view) : base(view) { }
+            public MyGridColumnCollection(ColumnView view) : base(view)
+            {
+            }
 
             protected override GridColumn CreateColumn()
             {
@@ -125,9 +135,11 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Grids
     public class MyGridColumn : GridColumn, IStatusBarShortcut
     {
         #region Properties
+
         public string StatusBarShortcut { get; set; }
         public string StatusBarShortcutDescription { get; set; }
         public string StatusBarDescription { get; set; }
-        #endregion
+
+        #endregion Properties
     }
 }

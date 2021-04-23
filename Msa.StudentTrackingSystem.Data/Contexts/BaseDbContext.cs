@@ -8,7 +8,11 @@ namespace Msa.StudentTrackingSystem.Data.Contexts
         where TConfiguration : DbMigrationsConfiguration<TContext>, new()
     {
         private static string _nameOrConnectionString = typeof(TContext).Name;
-        public BaseDbContext() : base(_nameOrConnectionString) { }
+
+        public BaseDbContext() : base(_nameOrConnectionString)
+        {
+        }
+
         public BaseDbContext(string connectionString) : base(connectionString)
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<TContext, TConfiguration>());

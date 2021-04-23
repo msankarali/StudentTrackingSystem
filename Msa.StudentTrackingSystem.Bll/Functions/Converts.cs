@@ -1,9 +1,6 @@
 ﻿using Msa.StudentTrackingSystem.Model.Entities.Base.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Msa.StudentTrackingSystem.Bll.Functions
 {

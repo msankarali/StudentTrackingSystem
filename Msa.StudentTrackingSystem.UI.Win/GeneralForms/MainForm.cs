@@ -1,15 +1,5 @@
 ﻿using DevExpress.XtraBars;
-using DevExpress.XtraEditors;
 using Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Msa.StudentTrackingSystem.UI.Win.GeneralForms
 {
@@ -30,6 +20,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.GeneralForms
                     case BarButtonItem btn:
                         btn.ItemClick += Buttons_ItemClick;
                         break;
+
                     default:
                         break;
                 }

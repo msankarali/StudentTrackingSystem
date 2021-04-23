@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Msa.Dal.Interfaces
 {
@@ -10,6 +6,7 @@ namespace Msa.Dal.Interfaces
         where T : class
     {
         IRepository<T> Rep { get; }
+
         bool Save();
     }
 }

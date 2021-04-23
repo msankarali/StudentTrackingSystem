@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Msa.Dal.Base
 {
@@ -13,9 +11,11 @@ namespace Msa.Dal.Base
         where T : class
     {
         #region Variables
+
         private readonly DbContext _context;
         private readonly DbSet<T> _dbSet;
-        #endregion
+
+        #endregion Variables
 
         public Repository(DbContext context)
         {
@@ -46,7 +46,6 @@ namespace Msa.Dal.Base
             var entry = _context.Entry(entity);
             foreach (var field in fields)
                 entry.Property(field).IsModified = true;
-
         }
 
         public void Update(IEnumerable<T> entities)
@@ -81,7 +80,9 @@ namespace Msa.Dal.Base
         }
 
         #region Dispose
+
         private bool _disposedValue = false;
+
         protected virtual void Dispose(bool disposing)
         {
             if (!_disposedValue)
@@ -98,6 +99,7 @@ namespace Msa.Dal.Base
             Dispose(disposing: true);
             GC.SuppressFinalize(this);
         }
-        #endregion
+
+        #endregion Dispose
     }
 }

@@ -11,6 +11,7 @@ namespace Msa.StudentTrackingSystem.Model.Entities
 
         [Required, MaxLength(50)]
         public string OkulAdi { get; set; }
+
         public long IlId { get; set; }
         public long IlceId { get; set; }
 

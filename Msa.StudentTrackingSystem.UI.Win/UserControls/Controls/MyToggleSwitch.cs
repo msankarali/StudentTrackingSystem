@@ -1,13 +1,8 @@
 ﻿using DevExpress.Utils;
 using DevExpress.XtraEditors;
 using Msa.StudentTrackingSystem.UI.Win.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
 {
@@ -24,6 +19,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
             Properties.GlyphAlignment = HorzAlignment.Far;
             Properties.Appearance.ForeColor = Color.Maroon;
         }
+
         public override bool EnterMoveNextControl { get; set; } = true;
         public string StatusBarDescription { get; set; } = "Kartın kullanım durumunu seçiniz.";
     }

@@ -1,13 +1,8 @@
 ﻿using DevExpress.XtraDataLayout;
 using DevExpress.XtraLayout;
 using DevExpress.XtraLayout.Utils;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
@@ -30,14 +25,15 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
     {
         public MyLayoutControlImplementor(ILayoutControlOwner controlOwner) : base(controlOwner)
         {
-
         }
+
         public override BaseLayoutItem CreateLayoutItem(LayoutGroup parent)
         {
             var item = base.CreateLayoutItem(parent);
             item.AppearanceItemCaption.ForeColor = Color.Maroon;
             return item;
         }
+
         public override LayoutGroup CreateLayoutGroup(LayoutGroup parent)
         {
             var group = base.CreateLayoutGroup(parent);

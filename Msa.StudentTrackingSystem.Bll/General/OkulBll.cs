@@ -6,17 +6,21 @@ using Msa.StudentTrackingSystem.Model.Entities;
 using Msa.StudentTrackingSystem.Model.Entities.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Windows.Forms;
-using System.Linq;
 
 namespace Msa.StudentTrackingSystem.Bll.General
 {
     public class OkulBll : BaseBll<Okul, StudentTrackingSystemContext>
     {
-        public OkulBll() { }
+        public OkulBll()
+        {
+        }
 
-        public OkulBll(Control ctrl) : base(ctrl) { }
+        public OkulBll(Control ctrl) : base(ctrl)
+        {
+        }
 
         public BaseEntity Single(Expression<Func<Okul, bool>> filter)
         {

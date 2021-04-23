@@ -4,7 +4,7 @@ using System.ComponentModel;
 namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
 {
     [ToolboxItem(true)]
-    class MyIbanTextEdit : MyTextEdit
+    internal class MyIbanTextEdit : MyTextEdit
     {
         public MyIbanTextEdit()
         {

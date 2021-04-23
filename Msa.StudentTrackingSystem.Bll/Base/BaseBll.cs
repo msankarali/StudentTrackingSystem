@@ -20,7 +20,9 @@ namespace Msa.StudentTrackingSystem.Bll.Base
         private readonly Control _ctrl;
         private IUnitOfWork<T> _uow;
 
-        protected BaseBll() { }
+        protected BaseBll()
+        {
+        }
 
         protected BaseBll(Control ctrl)
         {
@@ -69,12 +71,14 @@ namespace Msa.StudentTrackingSystem.Bll.Base
         }
 
         #region Dispose
+
         public void Dispose()
         {
             _ctrl?.Dispose();
             _uow?.Dispose();
             GC.SuppressFinalize(this);
         }
-        #endregion
+
+        #endregion Dispose
     }
 }

@@ -13,6 +13,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
             Properties.AppearanceFocused.BackColor = Color.LightCyan;
             Properties.MaxLength = 500;
         }
+
         public override bool EnterMoveNextControl { get; set; } = true;
         public string StatusBarDescription { get; set; } = "Açıklama giriniz.";
     }

@@ -17,10 +17,10 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
             Properties.SizeMode = PictureSizeMode.Stretch;
             Properties.ShowMenu = false;
         }
+
         public override bool EnterMoveNextControl { get; set; } = true;
         public string StatusBarShortcut { get; set; } = "F4: ";
         public string StatusBarShortcutDescription { get; set; }
         public string StatusBarDescription { get; set; }
-
     }
 }

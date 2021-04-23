@@ -6,8 +6,10 @@ namespace Msa.StudentTrackingSystem.Common.Enums
     {
         [Description("Okul Kartı")]
         Okul = 1,
+
         [Description("İl Kartı")]
         Il = 2,
+
         [Description("İlçe Kartı")]
         Ilce = 3
     }
