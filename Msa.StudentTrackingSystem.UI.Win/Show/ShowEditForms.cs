@@ -1,11 +1,6 @@
 ﻿using Msa.StudentTrackingSystem.Common.Enums;
 using Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Msa.StudentTrackingSystem.UI.Win.Show
 {
@@ -22,6 +17,10 @@ namespace Msa.StudentTrackingSystem.UI.Win.Show
                     id > 0
                     ? FormOperationType.EntityUpdate
                     : FormOperationType.EntityInsert;
+                form.id = id;
+                form.Load();
+                form.ShowDialog();
+                return form.refreshRequired ? form.id : 0;
             }
         }
     }
