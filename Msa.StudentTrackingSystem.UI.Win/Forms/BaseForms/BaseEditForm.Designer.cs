@@ -1,7 +1,7 @@
 ﻿
 namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 {
-    partial class BaseCardForm
+    partial class BaseEditForm
     {
         /// <summary>
         /// Required designer variable.

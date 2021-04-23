@@ -1,7 +1,7 @@
 ﻿
 namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 {
-    partial class BaseCardsForm
+    partial class BaseListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -89,7 +89,14 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnColumns = new DevExpress.XtraBars.BarButtonItem();
             this.btnPrint = new DevExpress.XtraBars.BarButtonItem();
             this.btnClose = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSend = new DevExpress.XtraBars.BarSubItem();
+            this.btnExport = new DevExpress.XtraBars.BarSubItem();
+            this.btnExcelDocuments = new DevExpress.XtraBars.BarSubItem();
+            this.btnExcelStandartDocument = new DevExpress.XtraBars.BarButtonItem();
+            this.btnExcelFormattedDocument = new DevExpress.XtraBars.BarButtonItem();
+            this.btnExcelUnformattedDocument = new DevExpress.XtraBars.BarButtonItem();
+            this.btnWordDocument = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPdfDocument = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTxtDosyasi = new DevExpress.XtraBars.BarButtonItem();
             this.barInsert = new DevExpress.XtraBars.BarStaticItem();
             this.barInsertDescription = new DevExpress.XtraBars.BarStaticItem();
             this.barDelete = new DevExpress.XtraBars.BarStaticItem();
@@ -135,7 +142,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.btnColumns,
             this.btnPrint,
             this.btnClose,
-            this.btnSend,
+            this.btnExport,
             this.barInsert,
             this.barInsertDescription,
             this.barDelete,
@@ -156,9 +163,16 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.barSendDescription,
             this.barClose,
             this.barCloseDescription,
-            this.btnActivePassiveCards});
+            this.btnActivePassiveCards,
+            this.btnExcelDocuments,
+            this.btnExcelStandartDocument,
+            this.btnExcelFormattedDocument,
+            this.btnExcelUnformattedDocument,
+            this.btnWordDocument,
+            this.btnPdfDocument,
+            this.btnTxtDosyasi});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 33;
+            this.ribbonControl.MaxItemId = 40;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -346,13 +360,19 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             superToolTip9.Items.Add(toolTipItem18);
             this.btnClose.SuperTip = superToolTip9;
             // 
-            // btnSend
+            // btnExport
             // 
-            this.btnSend.Caption = "Gönder";
-            this.btnSend.Id = 11;
-            this.btnSend.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.export_16x16;
-            this.btnSend.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.export_32x32;
-            this.btnSend.Name = "btnSend";
+            this.btnExport.Caption = "Gönder";
+            this.btnExport.Id = 11;
+            this.btnExport.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.export_16x16;
+            this.btnExport.ImageOptions.LargeImage = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.export_32x32;
+            this.btnExport.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F12);
+            this.btnExport.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnExcelDocuments, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnWordDocument),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnPdfDocument),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTxtDosyasi)});
+            this.btnExport.Name = "btnExport";
             toolTipTitleItem10.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.about_16x16;
             toolTipTitleItem10.Text = "(F12)";
             toolTipItem19.Text = "Dosyaya Gönder";
@@ -362,7 +382,66 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             superToolTip10.Items.Add(toolTipItem19);
             superToolTip10.Items.Add(toolTipSeparatorItem10);
             superToolTip10.Items.Add(toolTipItem20);
-            this.btnSend.SuperTip = superToolTip10;
+            this.btnExport.SuperTip = superToolTip10;
+            // 
+            // btnExcelDocuments
+            // 
+            this.btnExcelDocuments.Caption = "Excel Dosyaları";
+            this.btnExcelDocuments.Id = 33;
+            this.btnExcelDocuments.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.exporttoxlsx_32x32;
+            this.btnExcelDocuments.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnExcelStandartDocument),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnExcelFormattedDocument),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnExcelUnformattedDocument)});
+            this.btnExcelDocuments.Name = "btnExcelDocuments";
+            // 
+            // btnExcelStandartDocument
+            // 
+            this.btnExcelStandartDocument.Caption = "Excel Dosyası (Standart)";
+            this.btnExcelStandartDocument.Id = 34;
+            this.btnExcelStandartDocument.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.exporttoxlsx_32x32;
+            this.btnExcelStandartDocument.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S));
+            this.btnExcelStandartDocument.Name = "btnExcelStandartDocument";
+            // 
+            // btnExcelFormattedDocument
+            // 
+            this.btnExcelFormattedDocument.Caption = "Excel Dosyası (Formatlı)";
+            this.btnExcelFormattedDocument.Id = 35;
+            this.btnExcelFormattedDocument.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.exporttoxlsx_32x32;
+            this.btnExcelFormattedDocument.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F));
+            this.btnExcelFormattedDocument.Name = "btnExcelFormattedDocument";
+            // 
+            // btnExcelUnformattedDocument
+            // 
+            this.btnExcelUnformattedDocument.Caption = "Excel Dosyası (Formatsız)";
+            this.btnExcelUnformattedDocument.Id = 36;
+            this.btnExcelUnformattedDocument.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.exporttoxlsx_32x32;
+            this.btnExcelUnformattedDocument.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z));
+            this.btnExcelUnformattedDocument.Name = "btnExcelUnformattedDocument";
+            // 
+            // btnWordDocument
+            // 
+            this.btnWordDocument.Caption = "Word Dosyası";
+            this.btnWordDocument.Id = 37;
+            this.btnWordDocument.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.exporttodocx_32x32;
+            this.btnWordDocument.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W));
+            this.btnWordDocument.Name = "btnWordDocument";
+            // 
+            // btnPdfDocument
+            // 
+            this.btnPdfDocument.Caption = "Pdf Dosyası";
+            this.btnPdfDocument.Id = 38;
+            this.btnPdfDocument.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.exporttopdf_32x32;
+            this.btnPdfDocument.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P));
+            this.btnPdfDocument.Name = "btnPdfDocument";
+            // 
+            // btnTxtDosyasi
+            // 
+            this.btnTxtDosyasi.Caption = "Txt Dosyası";
+            this.btnTxtDosyasi.Id = 39;
+            this.btnTxtDosyasi.ImageOptions.Image = global::Msa.StudentTrackingSystem.UI.Win.Properties.Resources.exporttotxt_32x32;
+            this.btnTxtDosyasi.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G), (System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T));
+            this.btnTxtDosyasi.Name = "btnTxtDosyasi";
             // 
             // barInsert
             // 
@@ -563,7 +642,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             this.ribbonPageGroup1.ItemLinks.Add(this.btnFilter);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnColumns);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnPrint);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnSend);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnExport);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnClose);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
@@ -634,7 +713,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private DevExpress.XtraBars.BarButtonItem btnColumns;
         private DevExpress.XtraBars.BarButtonItem btnPrint;
         private DevExpress.XtraBars.BarButtonItem btnClose;
-        private DevExpress.XtraBars.BarSubItem btnSend;
+        private DevExpress.XtraBars.BarSubItem btnExport;
         protected DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
         private DevExpress.XtraBars.BarStaticItem barInsert;
         private DevExpress.XtraBars.BarStaticItem barInsertDescription;
@@ -657,5 +736,12 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         private DevExpress.XtraBars.BarStaticItem barClose;
         private DevExpress.XtraBars.BarStaticItem barCloseDescription;
         private DevExpress.XtraBars.BarButtonItem btnActivePassiveCards;
+        private DevExpress.XtraBars.BarSubItem btnExcelDocuments;
+        private DevExpress.XtraBars.BarButtonItem btnExcelStandartDocument;
+        private DevExpress.XtraBars.BarButtonItem btnExcelFormattedDocument;
+        private DevExpress.XtraBars.BarButtonItem btnExcelUnformattedDocument;
+        private DevExpress.XtraBars.BarButtonItem btnWordDocument;
+        private DevExpress.XtraBars.BarButtonItem btnPdfDocument;
+        private DevExpress.XtraBars.BarButtonItem btnTxtDosyasi;
     }
 }

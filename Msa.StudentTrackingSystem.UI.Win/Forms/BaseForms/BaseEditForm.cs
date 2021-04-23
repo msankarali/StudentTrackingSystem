@@ -1,8 +1,8 @@
 ﻿namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 {
-    public partial class BaseCardsForm : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class BaseEditForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public BaseCardsForm()
+        public BaseEditForm()
         {
             InitializeComponent();
         }

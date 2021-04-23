@@ -17,7 +17,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.GeneralForms
             {
                 switch (item)
                 {
-                    case BarButtonItem btn:
+                    case BarItem btn:
                         btn.ItemClick += Buttons_ItemClick;
                         break;
 
@@ -31,7 +31,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.GeneralForms
         {
             if (e.Item == btnOkulCards)
             {
-                OkulCards frmOkulCards = new OkulCards();
+                OkulListForm frmOkulCards = new OkulListForm();
                 frmOkulCards.MdiParent = ActiveForm;
                 frmOkulCards.Show();
             }
