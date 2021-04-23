@@ -23,15 +23,13 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 
         private void EventsLoad()
         {
-            foreach (var item in ribbonControl.Items)
-            {
-                switch (item)
-                {
-                    case BarItem button:
-                        button.ItemClick += Button_ItemClick;
-                        break;
-                }
-            }
+            //Button events
+            foreach (BarItem button in ribbonControl.Items)
+                button.ItemClick += Button_ItemClick;
+
+            //Table events
+
+            //Form events
         }
 
 
