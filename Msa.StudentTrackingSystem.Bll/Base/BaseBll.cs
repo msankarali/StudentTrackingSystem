@@ -2,6 +2,7 @@
 using Msa.StudentTrackingSystem.Bll.Functions;
 using Msa.StudentTrackingSystem.Bll.Interfaces;
 using Msa.StudentTrackingSystem.Common.Enums;
+using Msa.StudentTrackingSystem.Common.Functions;
 using Msa.StudentTrackingSystem.Common.Message;
 using Msa.StudentTrackingSystem.Model.Entities.Base;
 using System;
@@ -61,28 +62,17 @@ namespace Msa.StudentTrackingSystem.Bll.Base
         {
             GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
             if (mesajVer)
-                Messages.DeleteMessage(cardType);
+                if (Messages.DeleteMessage(cardType.ToName()) != DialogResult.Yes) return false;
 
+            _uow.Rep.Delete(entity.EntityConvert<T>());
+            return _uow.Save();
         }
 
         #region Dispose
-        private bool disposedValue = false;
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!disposedValue)
-            {
-                if (disposing)
-                {
-
-                }
-
-                disposedValue = true;
-            }
-        }
-
         public void Dispose()
         {
-            Dispose(disposing: true);
+            _ctrl?.Dispose();
+            _uow?.Dispose();
             GC.SuppressFinalize(this);
         }
         #endregion
