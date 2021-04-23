@@ -1,11 +1,12 @@
 ﻿using Msa.StudentTrackingSystem.Common.Enums;
 using Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms;
+using Msa.StudentTrackingSystem.UI.Win.Show.Interfaces;
 using System;
 
 namespace Msa.StudentTrackingSystem.UI.Win.Show
 {
-    public class ShowEditForm<TForm>
-        where TForm : BaseEditForm //Interface implementation
+    public class ShowEditForm<TForm> : IBaseFormShow
+        where TForm : BaseEditForm
     {
         public long ShowDialogEditForm(CardType cardType, long id) //, params object[] param)
         {

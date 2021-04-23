@@ -1,9 +1,20 @@
 ﻿using DevExpress.XtraBars;
+using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraGrid.Views.Grid;
+using Msa.StudentTrackingSystem.Common.Enums;
+using Msa.StudentTrackingSystem.UI.Win.Functions;
+using Msa.StudentTrackingSystem.UI.Win.Show.Interfaces;
+using System.Windows.Forms;
 
 namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 {
-    public partial class BaseListForm : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class BaseListForm : RibbonForm
     {
+        protected IBaseFormShow FormShow;
+        protected CardType CardType;
+        protected internal GridView Table;
+        protected bool ShowActiveCards = true;
+
         public BaseListForm()
         {
             InitializeComponent();
@@ -26,11 +37,43 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 
         private void ShowEditForm(long id)
         {
-            var result = ;
+            var result = FormShow.ShowDialogEditForm(CardType, id);
+        }
+
+        private void EntityDelete()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void SelectEntity()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void RefreshList()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void ApplyFilter()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void Print()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void SetFormCaption()
+        {
+            throw new System.NotImplementedException();
         }
 
         private void Button_ItemClick(object sender, ItemClickEventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
+
             if (e.Item == btnExport)
             {
                 var link = (BarSubItemLink)e.Item.Links[0];
@@ -66,8 +109,53 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             {
                 //TODO: Auth controls
 
-                ShowEditForm();
+                ShowEditForm(-1);
             }
+            else if (e.Item == btnEdit)
+            {
+                ShowEditForm(Table.GetRowId());
+            }
+            else if (e.Item == btnDelete)
+            {
+                //TODO: Auth controls
+
+                EntityDelete();
+            }
+            else if (e.Item == btnSelect)
+            {
+                SelectEntity();
+            }
+            else if (e.Item == btnRefresh)
+            {
+                RefreshList();
+            }
+            else if (e.Item == btnFilter)
+            {
+                ApplyFilter();
+            }
+            else if (e.Item == btnColumns)
+            {
+                if (Table.CustomizationForm == null)
+                    Table.ShowCustomization();
+                else
+                    Table.HideCustomization();
+            }
+            else if (e.Item == btnPrint)
+            {
+                Print();
+            }
+            else if (e.Item == btnClose)
+            {
+                Close();
+            }
+            else if (e.Item == btnActivePassiveCards)
+            {
+                ShowActiveCards = !ShowActiveCards;
+                SetFormCaption();
+            }
+
+            Cursor.Current = DefaultCursor;
         }
+
     }
 }

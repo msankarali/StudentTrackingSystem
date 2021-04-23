@@ -10,6 +10,11 @@ namespace Msa.StudentTrackingSystem.Common.Message
             XtraMessageBox.Show(errorMessage, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void WarningMessage(string warningMessage)
+        {
+            XtraMessageBox.Show(warningMessage, "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
         public static DialogResult YesChoseYesNo(string mesaj, string baslik)
         {
             return XtraMessageBox.Show(mesaj, baslik, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
@@ -23,6 +28,11 @@ namespace Msa.StudentTrackingSystem.Common.Message
         public static DialogResult DeleteMessage(string cardName)
         {
             return NoChoseYesNo($"Seçtiğiniz {cardName} silinecektir. Onaylıyor musunuz?", "Silme onayı");
+        }
+
+        public static void ValidRowNotSelectedMessage()
+        {
+            WarningMessage("Lütfen bir kart seçiniz.");
         }
     }
 }
