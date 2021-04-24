@@ -1,13 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Msa.StudentTrackingSystem.Common.Enums;
+using Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms;
+using System;
+using System.Windows.Forms;
 
 namespace Msa.StudentTrackingSystem.UI.Win.Show
 {
-    public class ShowListForms
+    public class ShowListForms<TForm>
+        where TForm : BaseListForm
     {
+        public static void ShowListForm(CardType cardType)
+        {
+            //TODO: Auth controls
 
+            var form = (TForm)Activator.CreateInstance(typeof(TForm));
+            form.MdiParent = Form.ActiveForm;
+
+            form.LoadForm();
+            form.Show();
+        }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using DevExpress.XtraBars;
+using Msa.StudentTrackingSystem.Common.Enums;
 using Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms;
+using Msa.StudentTrackingSystem.UI.Win.Show;
 
 namespace Msa.StudentTrackingSystem.UI.Win.GeneralForms
 {
@@ -30,11 +32,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.GeneralForms
         private void Buttons_ItemClick(object sender, ItemClickEventArgs e)
         {
             if (e.Item == btnOkulCards)
-            {
-                OkulListForm frmOkulCards = new OkulListForm();
-                frmOkulCards.MdiParent = ActiveForm;
-                frmOkulCards.Show();
-            }
+                ShowListForms<OkulListForm>.ShowListForm(CardType.Okul);
+
         }
     }
 }

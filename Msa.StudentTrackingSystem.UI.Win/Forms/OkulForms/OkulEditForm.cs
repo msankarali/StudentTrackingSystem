@@ -58,6 +58,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
 
                 Durum = tglDurum.IsOn
             };
+            ButtonEnabledStatus();
         }
     }
 }

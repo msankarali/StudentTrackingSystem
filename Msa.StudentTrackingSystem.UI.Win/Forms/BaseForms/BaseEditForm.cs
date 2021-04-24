@@ -3,6 +3,7 @@ using DevExpress.XtraBars.Ribbon;
 using Msa.StudentTrackingSystem.Bll.Interfaces;
 using Msa.StudentTrackingSystem.Common.Enums;
 using Msa.StudentTrackingSystem.Model.Entities.Base;
+using Msa.StudentTrackingSystem.UI.Win.Functions;
 using Msa.StudentTrackingSystem.UI.Win.UserControls.Controls;
 using System;
 
@@ -18,6 +19,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         protected CardType CardType;
         protected BaseEntity OldEntity;
         protected BaseEntity CurrentEntity;
+        protected bool IsLoaded;
 
         public BaseEditForm()
         {
@@ -29,6 +31,20 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             //Button events
             foreach (BarItem button in ribbonControl.Items)
                 button.ItemClick += Button_ItemClick;
+
+            //Form events
+            Load += BaseEditForm_Load; ;
+        }
+
+        private void BaseEditForm_Load(object sender, EventArgs e)
+        {
+            IsLoaded = true;
+            CreateNewerObject();
+            //TODO: sablon
+            //ButtonHideShow();
+            Id = FormOperationType.GenerateId(OldEntity);
+
+            //TODO: update operations will be applied
         }
 
         private void Button_ItemClick(object sender, ItemClickEventArgs e)
@@ -78,5 +94,11 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         protected virtual void BindObjectsToControls() { }
 
         protected virtual void CreateNewerObject() { }
+
+        protected internal virtual void ButtonEnabledStatus()
+        {
+            if (!IsLoaded) return;
+            GeneralFunctions.ButtonEnabledState(btnNew, btnSave, btnUndo, btnDelete, OldEntity, CurrentEntity);
+        }
     }
 }
