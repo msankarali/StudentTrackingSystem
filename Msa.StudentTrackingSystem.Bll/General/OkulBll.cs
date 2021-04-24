@@ -1,4 +1,5 @@
 ﻿using Msa.StudentTrackingSystem.Bll.Base;
+using Msa.StudentTrackingSystem.Bll.Interfaces;
 using Msa.StudentTrackingSystem.Common.Enums;
 using Msa.StudentTrackingSystem.Data.Contexts;
 using Msa.StudentTrackingSystem.Model.Dtos;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Msa.StudentTrackingSystem.Bll.General
 {
-    public class OkulBll : BaseBll<Okul, StudentTrackingSystemContext>
+    public class OkulBll : BaseBll<Okul, StudentTrackingSystemContext>, IBaseGeneralBll
     {
         public OkulBll()
         {
@@ -64,6 +65,11 @@ namespace Msa.StudentTrackingSystem.Bll.General
         public bool Delete(BaseEntity entity)
         {
             return BaseDelete(entity, CardType.Okul);
+        }
+
+        public string GenerateNewKod()
+        {
+            throw new NotImplementedException();
         }
     }
 }

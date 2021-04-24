@@ -7,6 +7,7 @@ using Msa.StudentTrackingSystem.Model.Entities.Base;
 using Msa.StudentTrackingSystem.UI.Win.Functions;
 using Msa.StudentTrackingSystem.UI.Win.UserControls.Controls;
 using System;
+using System.Windows.Forms;
 
 namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 {
@@ -21,6 +22,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         protected BaseEntity OldEntity;
         protected BaseEntity CurrentEntity;
         protected bool IsLoaded;
+        protected bool FormClosingAfterSave = true;
 
         public BaseEditForm()
         {
@@ -85,12 +87,76 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             throw new NotImplementedException();
         }
 
-        private void Save(bool closing)
+        private bool Save(bool closing)
         {
+            bool SaveOperation()
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                switch (FormOperationType)
+                {
+                    case FormOperationType.EntityInsert:
+                        if (EntityInsert())
+                            return OperationsAfterSave();
+
+                        break;
+
+                    case FormOperationType.EntityUpdate:
+                        if (EntityUpdate())
+                            return OperationsAfterSave();
+
+                        break;
+                }
+
+                bool OperationsAfterSave()
+                {
+                    OldEntity = CurrentEntity;
+                    RefreshRequired = true;
+                    ButtonEnabledStatus();
+
+                    if (FormClosingAfterSave)
+                        Close();
+                    else
+                        FormOperationType =
+                            FormOperationType == FormOperationType.EntityInsert
+                            ? FormOperationType.EntityUpdate
+                            : FormOperationType;
+
+                    return true;
+                }
+
+                return false;
+            }
+
             var result =
                 closing == true
                 ? Messages.ClosingMessage()
                 : Messages.SaveMessage();
+
+            switch (result)
+            {
+                case System.Windows.Forms.DialogResult.Yes:
+                    return SaveOperation();
+
+                case System.Windows.Forms.DialogResult.No:
+                    if (closing)
+                        btnSave.Enabled = false;
+                    return true;
+
+                case System.Windows.Forms.DialogResult.Cancel:
+                    return true;
+            }
+
+            return false;
+        }
+
+        protected virtual bool EntityInsert()
+        {
+            return ((IBaseGeneralBll)Bll).Insert(CurrentEntity);
+        }
+
+        protected virtual bool EntityUpdate()
+        {
+            return ((IBaseGeneralBll)Bll).Update(OldEntity, CurrentEntity);
         }
 
         protected internal virtual void LoadForm() { }
