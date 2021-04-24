@@ -69,7 +69,7 @@ namespace Msa.StudentTrackingSystem.Bll.General
 
         public string GenerateNewKod()
         {
-            throw new NotImplementedException();
+
         }
     }
 }
