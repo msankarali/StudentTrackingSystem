@@ -2,6 +2,7 @@
 using DevExpress.XtraBars.Ribbon;
 using Msa.StudentTrackingSystem.Bll.Interfaces;
 using Msa.StudentTrackingSystem.Common.Enums;
+using Msa.StudentTrackingSystem.Common.Message;
 using Msa.StudentTrackingSystem.Model.Entities.Base;
 using Msa.StudentTrackingSystem.UI.Win.Functions;
 using Msa.StudentTrackingSystem.UI.Win.UserControls.Controls;
@@ -84,9 +85,12 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             throw new NotImplementedException();
         }
 
-        private void Save(bool v)
+        private void Save(bool closing)
         {
-            throw new NotImplementedException();
+            var result =
+                closing == true
+                ? Messages.ClosingMessage()
+                : Messages.SaveMessage();
         }
 
         protected internal virtual void LoadForm() { }
