@@ -3,7 +3,9 @@ using DevExpress.XtraGrid.Views.Grid;
 using Msa.StudentTrackingSystem.Common.Enums;
 using Msa.StudentTrackingSystem.Common.Message;
 using Msa.StudentTrackingSystem.Model.Entities.Base;
+using Msa.StudentTrackingSystem.UI.Win.UserControls.Controls;
 using System;
+using System.Windows.Forms;
 
 namespace Msa.StudentTrackingSystem.UI.Win.Functions
 {
@@ -113,6 +115,18 @@ namespace Msa.StudentTrackingSystem.UI.Win.Functions
                 formOperationType == FormOperationType.EntityUpdate
                 ? selectedEntity.Id
                 : long.Parse(Id());
+        }
+
+        public static void ControlEnabledChange(MyButtonEdit baseEdit, Control paramEdit)
+        {
+            switch (paramEdit)
+            {
+                case MyButtonEdit btnEdit:
+                    btnEdit.Enabled = baseEdit.Id.HasValue;
+                    btnEdit.Id = null;
+                    btnEdit.EditValue = null;
+                    break;
+            }
         }
     }
 }

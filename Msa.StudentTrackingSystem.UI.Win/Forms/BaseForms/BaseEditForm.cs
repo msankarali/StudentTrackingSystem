@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraEditors;
 using Msa.StudentTrackingSystem.Bll.Interfaces;
 using Msa.StudentTrackingSystem.Common.Enums;
 using Msa.StudentTrackingSystem.Common.Message;
@@ -17,6 +18,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
         protected internal long Id;
         protected internal bool RefreshRequired;
         protected MyDataLayoutControl DataLayoutControl;
+        protected MyDataLayoutControl[] DataLayoutControls;
         protected IBaseBll Bll;
         protected CardType BaseCardType;
         protected BaseEntity OldEntity;
@@ -37,6 +39,77 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 
             //Form events
             Load += BaseEditForm_Load;
+
+            void ControlEvents(Control control)
+            {
+                control.KeyDown += Control_KeyDown;
+
+                switch (control)
+                {
+                    case MyButtonEdit btnEdit:
+                        btnEdit.IdChanged += Control_IdChanged;
+                        btnEdit.ButtonClick += Control_ButtonClick;
+                        btnEdit.DoubleClick += Control_DoubleClick;
+                        break;
+
+                    case BaseEdit btnEdit:
+                        btnEdit.EditValueChanged += Control_EditValueChanged;
+                        break;
+                }
+            }
+
+            if (DataLayoutControls == null)
+            {
+                if (DataLayoutControl == null) return;
+                foreach (Control control in DataLayoutControl.Controls)
+                    ControlEvents(control);
+            }
+            else
+                foreach (var layout in DataLayoutControls)
+                    foreach (Control control in layout.Controls)
+                        ControlEvents(control);
+        }
+
+        private void Control_EditValueChanged(object sender, EventArgs e)
+        {
+            if (!IsLoaded) return;
+            CreateNewerObject();
+        }
+
+        private void Control_DoubleClick(object sender, EventArgs e)
+        {
+            SetSelection(sender);
+        }
+
+        private void Control_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            SetSelection(sender);
+        }
+
+        private void Control_IdChanged(object sender, IdChangedEventArgs e)
+        {
+            if (!IsLoaded) return;
+            CreateNewerObject();
+        }
+
+        private void Control_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+
+            if (sender is MyButtonEdit btnEdit)
+                switch (e.KeyCode)
+                {
+                    case Keys.Delete when e.Control && e.Shift:
+                        btnEdit.Id = null;
+                        btnEdit.EditValue = null;
+                        break;
+
+                    case Keys.F4:
+                    case Keys.Down when e.Modifiers == Keys.Alt:
+                        SetSelection(btnEdit);
+                        break;
+                }
         }
 
         private void BaseEditForm_Load(object sender, EventArgs e)
@@ -76,6 +149,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
                 Close();
             }
         }
+
+        protected virtual void SetSelection(object sender) { }
 
         private void EntityDelete()
         {

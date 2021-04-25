@@ -19,8 +19,10 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.IlceForms
 {
     public partial class IlceListForm : BaseListForm
     {
+        #region Variables
         private readonly long _ilId;
         private readonly string _ilAdi;
+        #endregion
 
         public IlceListForm(params object[] param)
         {
@@ -35,7 +37,6 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.IlceForms
         {
             Table = table;
             BaseCardType = CardType.Ilce;
-            //FormShow = new ShowEditForm<OkulEditForm>();
             Navigator = longNavigator.Navigator;
         }
 

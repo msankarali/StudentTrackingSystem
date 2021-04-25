@@ -38,10 +38,13 @@ namespace Msa.StudentTrackingSystem.UI.Win.UserControls.Controls
                 _id = value;
 
                 IdChanged(this, new IdChangedEventArgs(oldValue, newValue));
+                EnabledChange(this, EventArgs.Empty);
             }
         }
 
         public event EventHandler<IdChangedEventArgs> IdChanged = delegate { };
+        public event EventHandler EnabledChange = delegate { };
+
 
         #endregion Events
     }

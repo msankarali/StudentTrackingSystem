@@ -11,7 +11,7 @@ namespace Msa.StudentTrackingSystem.Bll.Functions
             if (source == null) return default(TTarget);
             var destination = Activator.CreateInstance<TTarget>();
             var sourceProperties = source.GetType().GetProperties();
-            var destinationProperties = typeof(TTarget).GetType().GetProperties();
+            var destinationProperties = typeof(TTarget).GetProperties();
 
             foreach (var sourceProperty in sourceProperties)
             {

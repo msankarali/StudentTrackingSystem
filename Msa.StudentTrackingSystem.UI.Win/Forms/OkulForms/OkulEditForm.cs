@@ -5,6 +5,8 @@ using Msa.StudentTrackingSystem.Model.Dtos;
 using Msa.StudentTrackingSystem.UI.Win.Functions;
 using Msa.StudentTrackingSystem.Model.Entities;
 using System;
+using Msa.StudentTrackingSystem.UI.Win.UserControls.Controls;
+using DevExpress.XtraEditors;
 
 namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
 {
@@ -65,6 +67,23 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
                 Durum = tglDurum.IsOn
             };
             ButtonEnabledStatus();
+        }
+
+        protected override void SetSelection(object sender)
+        {
+            if (!(sender is ButtonEdit)) return;
+
+            using (var select = new SelectFunctions())
+            {
+                if (sender == txtIl)
+                {
+                    select.Select(txtIl);
+                }
+                else if (sender == txtIlce)
+                {
+                    select.Select(txtIlce, txtIl);
+                }
+            }
         }
     }
 }
