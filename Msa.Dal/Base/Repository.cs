@@ -1,4 +1,6 @@
 ﻿using Msa.Dal.Interfaces;
+using Msa.StudentTrackingSystem.Common.Enums;
+using Msa.StudentTrackingSystem.Common.Functions;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -77,6 +79,58 @@ namespace Msa.Dal.Base
             return filter == null
                 ? _dbSet.Select(selector)
                 : _dbSet.Where(filter).Select(selector);
+        }
+
+        public string GenerateNewKod(CardType cardType, Expression<Func<T, string>> filter, Expression<Func<T, bool>> where = null)
+        {
+            string Kod()
+            {
+                string kod = null;
+                var kodArray = cardType.ToName().Split(' ');
+
+                for (int i = 0; i < kodArray.Length - 1; i++)
+                {
+                    kod += kodArray[i];
+
+                    if (i + 1 < kodArray.Length - 1)
+                    {
+                        kod += " ";
+                    }
+                }
+
+                return kod += "-0001";
+            }
+
+            string GenerateNewKod(string kod)
+            {
+                var numberedValues = "";
+                foreach (var character in kod)
+                {
+                    if (char.IsDigit(character))
+                        numberedValues += character;
+                    else
+                        numberedValues = "";
+                }
+
+                var numberAfterChange = (int.Parse(numberedValues) + 1).ToString();
+                var difference = kod.Length - numberAfterChange.Length; //0049 -> 50
+                if (difference < 0)
+                    difference = 0;
+
+                var newValue = kod.Substring(0, difference);
+                newValue += numberAfterChange; //Sample-0050 √
+
+                return newValue;
+            }
+
+            var maxKod =
+                where == null
+                ? _dbSet.Max(filter)
+                : _dbSet.Where(where).Max(filter);
+            return
+                maxKod == null
+                ? Kod()
+                : GenerateNewKod(maxKod);
         }
 
         #region Dispose
