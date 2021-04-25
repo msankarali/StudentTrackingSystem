@@ -144,9 +144,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.txtIlce.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.txtIlce.Size = new System.Drawing.Size(145, 20);
-            this.txtIlce.StatusBarDescription = null;
+            this.txtIlce.StatusBarDescription = "İlçe seçiniz.";
             this.txtIlce.StatusBarShortcut = "F4 :";
-            this.txtIlce.StatusBarShortcutDescription = null;
+            this.txtIlce.StatusBarShortcutDescription = "İlçe seç";
             this.txtIlce.StyleController = this.myDataLayoutControl;
             this.txtIlce.TabIndex = 2;
             // 
@@ -163,9 +163,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.txtIl.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.txtIl.Size = new System.Drawing.Size(145, 20);
-            this.txtIl.StatusBarDescription = null;
+            this.txtIl.StatusBarDescription = "İl seçiniz.";
             this.txtIl.StatusBarShortcut = "F4 :";
-            this.txtIl.StatusBarShortcutDescription = null;
+            this.txtIl.StatusBarShortcutDescription = "İl seç";
             this.txtIl.StyleController = this.myDataLayoutControl;
             this.txtIl.TabIndex = 1;
             // 
@@ -179,7 +179,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.txtOkulAdi.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtOkulAdi.Properties.MaxLength = 50;
             this.txtOkulAdi.Size = new System.Drawing.Size(323, 20);
-            this.txtOkulAdi.StatusBarDescription = null;
+            this.txtOkulAdi.StatusBarDescription = "Okul adı giriniz.";
             this.txtOkulAdi.StyleController = this.myDataLayoutControl;
             this.txtOkulAdi.TabIndex = 0;
             // 
