@@ -48,6 +48,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
                 {
                     case MyButtonEdit btnEdit:
                         btnEdit.IdChanged += Control_IdChanged;
+                        btnEdit.EnabledChange += Control_EnabledChange;
                         btnEdit.ButtonClick += Control_ButtonClick;
                         btnEdit.DoubleClick += Control_DoubleClick;
                         break;
@@ -69,6 +70,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
                     foreach (Control control in layout.Controls)
                         ControlEvents(control);
         }
+
+        protected virtual void Control_EnabledChange(object sender, EventArgs e) { }
 
         private void Control_EditValueChanged(object sender, EventArgs e)
         {

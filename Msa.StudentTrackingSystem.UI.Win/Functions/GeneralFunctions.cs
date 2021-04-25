@@ -117,16 +117,18 @@ namespace Msa.StudentTrackingSystem.UI.Win.Functions
                 : long.Parse(Id());
         }
 
-        public static void ControlEnabledChange(MyButtonEdit baseEdit, Control paramEdit)
+        public static void ControlEnabledChange(this MyButtonEdit baseEdit, Control paramEdit)
         {
             switch (paramEdit)
             {
                 case MyButtonEdit btnEdit:
-                    btnEdit.Enabled = baseEdit.Id.HasValue;
+                    btnEdit.Enabled = baseEdit.Id.HasValue && baseEdit.Id > 0;
                     btnEdit.Id = null;
                     btnEdit.EditValue = null;
                     break;
             }
         }
+
+
     }
 }
