@@ -18,8 +18,8 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
         protected override void FillVariables()
         {
             Table = table;
-            CardType = CardType.Okul;
-            FormShow = new ShowEditForm<OkulEditForm>();
+            BaseCardType = CardType.Okul;
+            FormShow = new ShowEditForms<OkulEditForm>();
             Navigator = longNavigator.Navigator;
         }
 

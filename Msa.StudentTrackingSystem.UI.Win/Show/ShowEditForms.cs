@@ -5,16 +5,33 @@ using System;
 
 namespace Msa.StudentTrackingSystem.UI.Win.Show
 {
-    public class ShowEditForm<TForm> : IBaseFormShow
+    public class ShowEditForms<TForm> : IBaseFormShow
         where TForm : BaseEditForm
     {
-        public long ShowDialogEditForm(CardType cardType, long id) //, params object[] param)
+        public long ShowDialogEditForm(CardType cardType, long id)
         {
             //TODO: Auth control
 
             using (var form = (TForm)Activator.CreateInstance(typeof(TForm)))
             {
-                form.FormOperationType =
+                form.BaseFormOperationType =
+                    id > 0
+                    ? FormOperationType.EntityUpdate
+                    : FormOperationType.EntityInsert;
+                form.Id = id;
+                form.LoadForm();
+                form.ShowDialog();
+                return form.RefreshRequired ? form.Id : 0;
+            }
+        }
+
+        public long ShowDialogEditForm(CardType cardType, long id, params object[] param)
+        {
+            //TODO: Auth control
+
+            using (var form = (TForm)Activator.CreateInstance(typeof(TForm), param))
+            {
+                form.BaseFormOperationType =
                     id > 0
                     ? FormOperationType.EntityUpdate
                     : FormOperationType.EntityInsert;

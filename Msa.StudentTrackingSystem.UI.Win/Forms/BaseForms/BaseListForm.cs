@@ -14,7 +14,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
     public partial class BaseListForm : RibbonForm
     {
         protected IBaseFormShow FormShow;
-        protected CardType CardType;
+        protected CardType BaseCardType;
         protected internal GridView Table;
         protected bool ShowActiveCards = true;
         protected internal bool IsMultiSelect;
@@ -57,9 +57,9 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 
         protected virtual void FillVariables() { }
 
-        private void ShowEditForm(long id)
+        protected virtual void ShowEditForm(long id)
         {
-            var result = FormShow.ShowDialogEditForm(CardType, id);
+            var result = FormShow.ShowDialogEditForm(BaseCardType, id);
         }
 
         private void EntityDelete()

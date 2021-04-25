@@ -13,12 +13,12 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
 {
     public partial class BaseEditForm : RibbonForm
     {
-        protected internal FormOperationType FormOperationType;
+        protected internal FormOperationType BaseFormOperationType;
         protected internal long Id;
         protected internal bool RefreshRequired;
         protected MyDataLayoutControl DataLayoutControl;
         protected IBaseBll Bll;
-        protected CardType CardType;
+        protected CardType BaseCardType;
         protected BaseEntity OldEntity;
         protected BaseEntity CurrentEntity;
         protected bool IsLoaded;
@@ -45,7 +45,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             CreateNewerObject();
             //TODO: sablon
             //ButtonHideShow();
-            Id = FormOperationType.GenerateId(OldEntity);
+            Id = BaseFormOperationType.GenerateId(OldEntity);
 
             //TODO: update operations will be applied
         }
@@ -56,7 +56,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             {
                 //Auth controls
 
-                FormOperationType = FormOperationType.EntityInsert;
+                BaseFormOperationType = FormOperationType.EntityInsert;
                 LoadForm();
             }
             else if (e.Item == btnSave)
@@ -92,7 +92,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
             bool SaveOperation()
             {
                 Cursor.Current = Cursors.WaitCursor;
-                switch (FormOperationType)
+                switch (BaseFormOperationType)
                 {
                     case FormOperationType.EntityInsert:
                         if (EntityInsert())
@@ -116,10 +116,10 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
                     if (FormClosingAfterSave)
                         Close();
                     else
-                        FormOperationType =
-                            FormOperationType == FormOperationType.EntityInsert
+                        BaseFormOperationType =
+                            BaseFormOperationType == FormOperationType.EntityInsert
                             ? FormOperationType.EntityUpdate
-                            : FormOperationType;
+                            : BaseFormOperationType;
 
                     return true;
                 }

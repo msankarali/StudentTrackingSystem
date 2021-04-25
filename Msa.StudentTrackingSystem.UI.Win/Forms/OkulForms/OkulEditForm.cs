@@ -16,19 +16,19 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
 
             DataLayoutControl = myDataLayoutControl;
             Bll = new OkulBll(myDataLayoutControl);
-            CardType = CardType.Okul;
+            BaseCardType = CardType.Okul;
             EventsLoad();
         }
 
         protected internal override void LoadForm()
         {
             OldEntity =
-                FormOperationType == FormOperationType.EntityInsert
+                BaseFormOperationType == FormOperationType.EntityInsert
                 ? new OkulS()
                 : ((OkulBll)Bll).Single(FilterFunctions.Filter<Okul>(Id));
             BindObjectsToControls();
 
-            if (FormOperationType != FormOperationType.EntityInsert) return;
+            if (BaseFormOperationType != FormOperationType.EntityInsert) return;
             txtKod.Text = ((OkulBll)Bll).GenerateNewKod();
             txtOkulAdi.Focus();
         }
@@ -46,6 +46,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             txtIlce.Text = entity.IlceAdi;
 
             tglDurum.IsOn = entity.Durum;
+            txtAciklama.Text = entity.Aciklama;
         }
 
         protected override void CreateNewerObject()
@@ -54,13 +55,13 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             {
                 Id = Id,
                 Kod = txtKod.Text,
+
                 OkulAdi = txtOkulAdi.Text,
 
                 IlId = Convert.ToInt64(txtIl.Id),
                 IlceId = Convert.ToInt64(txtIlce.Id),
 
                 Aciklama = txtAciklama.Text,
-
                 Durum = tglDurum.IsOn
             };
             ButtonEnabledStatus();

@@ -226,8 +226,14 @@
     <EmbeddedResource Include="Forms\IlceForms\IlceEditForm.resx">
       <DependentUpon>IlceEditForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IlceForms\IlceListForm.resx">
+      <DependentUpon>IlceListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\IlForms\IlEditForm.resx">
       <DependentUpon>IlEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IlForms\IlListForm.resx">
+      <DependentUpon>IlListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OkulForms\OkulEditForm.resx">
       <DependentUpon>OkulEditForm.cs</DependentUpon>
