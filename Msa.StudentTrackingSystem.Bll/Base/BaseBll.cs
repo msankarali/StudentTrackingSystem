@@ -70,10 +70,10 @@ namespace Msa.StudentTrackingSystem.Bll.Base
             return _uow.Save();
         }
 
-        protected string BaseGenerateNewKod(CardType cardType, Expression<Func<T, string>> filter, Expression<Func<T, bool>> whereExpression = null)
+        protected string BaseGenerateNewKod(CardType cardType, Expression<Func<T, string>> filter, Expression<Func<T, bool>> where = null)
         {
             GeneralFunctions.CreateUnitOfWork<T, TContext>(ref _uow);
-            _uow.Rep.GenerateNewKod
+            return _uow.Rep.GenerateNewKod(cardType, filter, where);
         }
 
         #region Dispose
