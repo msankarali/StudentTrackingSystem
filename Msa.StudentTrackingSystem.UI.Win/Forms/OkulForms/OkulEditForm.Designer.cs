@@ -96,7 +96,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.myDataLayoutControl.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl.Root = this.layoutControlGroup;
             this.myDataLayoutControl.Size = new System.Drawing.Size(398, 166);
-            this.myDataLayoutControl.TabIndex = 2;
+            this.myDataLayoutControl.TabIndex = 0;
             this.myDataLayoutControl.Text = "myDataLayoutControl1";
             // 
             // txtAciklama
@@ -111,7 +111,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.txtAciklama.Size = new System.Drawing.Size(323, 46);
             this.txtAciklama.StatusBarDescription = "Açıklama giriniz.";
             this.txtAciklama.StyleController = this.myDataLayoutControl;
-            this.txtAciklama.TabIndex = 9;
+            this.txtAciklama.TabIndex = 3;
             // 
             // tglDurum
             // 
@@ -129,7 +129,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.tglDurum.Size = new System.Drawing.Size(77, 20);
             this.tglDurum.StatusBarDescription = "Kartın kullanım durumunu seçiniz.";
             this.tglDurum.StyleController = this.myDataLayoutControl;
-            this.tglDurum.TabIndex = 8;
+            this.tglDurum.TabIndex = 4;
             // 
             // txtIlce
             // 
@@ -148,7 +148,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.txtIlce.StatusBarShortcut = "F4 :";
             this.txtIlce.StatusBarShortcutDescription = null;
             this.txtIlce.StyleController = this.myDataLayoutControl;
-            this.txtIlce.TabIndex = 7;
+            this.txtIlce.TabIndex = 2;
             // 
             // txtIl
             // 
@@ -167,7 +167,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.txtIl.StatusBarShortcut = "F4 :";
             this.txtIl.StatusBarShortcutDescription = null;
             this.txtIl.StyleController = this.myDataLayoutControl;
-            this.txtIl.TabIndex = 6;
+            this.txtIl.TabIndex = 1;
             // 
             // txtOkulAdi
             // 
@@ -181,7 +181,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.txtOkulAdi.Size = new System.Drawing.Size(323, 20);
             this.txtOkulAdi.StatusBarDescription = null;
             this.txtOkulAdi.StyleController = this.myDataLayoutControl;
-            this.txtOkulAdi.TabIndex = 5;
+            this.txtOkulAdi.TabIndex = 0;
             // 
             // txtKod
             // 
@@ -199,7 +199,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.txtKod.Size = new System.Drawing.Size(145, 20);
             this.txtKod.StatusBarDescription = "Kod giriniz.";
             this.txtKod.StyleController = this.myDataLayoutControl;
-            this.txtKod.TabIndex = 4;
+            this.txtKod.TabIndex = 5;
             // 
             // layoutControlGroup
             // 
@@ -326,7 +326,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.layoutControlItem6.TextSize = new System.Drawing.Size(41, 13);
             this.layoutControlItem6.TextToControlDistance = 10;
             // 
-            // OkulKarti
+            // OkulEditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -334,7 +334,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
             this.Controls.Add(this.myDataLayoutControl);
             this.IconOptions.ShowIcon = false;
             this.MinimumSize = new System.Drawing.Size(400, 300);
-            this.Name = "OkulKarti";
+            this.Name = "OkulEditForm";
             this.Text = "Okul Kartı";
             this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.myDataLayoutControl, 0);

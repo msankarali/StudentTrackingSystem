@@ -36,7 +36,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.BaseForms
                 button.ItemClick += Button_ItemClick;
 
             //Form events
-            Load += BaseEditForm_Load; ;
+            Load += BaseEditForm_Load;
         }
 
         private void BaseEditForm_Load(object sender, EventArgs e)

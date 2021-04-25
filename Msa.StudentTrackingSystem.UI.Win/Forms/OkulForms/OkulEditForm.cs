@@ -26,6 +26,7 @@ namespace Msa.StudentTrackingSystem.UI.Win.Forms.OkulForms
                 FormOperationType == FormOperationType.EntityInsert
                 ? new OkulS()
                 : ((OkulBll)Bll).Single(FilterFunctions.Filter<Okul>(Id));
+            BindObjectsToControls();
 
             if (FormOperationType != FormOperationType.EntityInsert) return;
             txtKod.Text = ((OkulBll)Bll).GenerateNewKod();
